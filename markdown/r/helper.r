@@ -13,7 +13,7 @@ logparse <- function(logfile, start = NULL, end = NULL, include = FALSE) {
     ## PURPOSE
     ##
     ## Work-around for problem of knitting Stata into Markdown. This function
-    ## parses the Stata log files (really any file) by taking as it's input
+    ## parses the Stata log files (really any file) by taking as its input
     ## a starting point in the log file and returning only a subsection.
     ## Requires consistent commenting in Stata do file (or whatever is
     ## being parsed). If no start or end is given, the entire log will
