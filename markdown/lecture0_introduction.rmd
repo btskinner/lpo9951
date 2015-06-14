@@ -1,0 +1,394 @@
+---
+title: Introduction to Stata
+author: Benjamin Skinner
+output: 
+  html_document:
+   toc: true
+   theme: cosmo
+   css: ./css/custom.css
+---
+
+```{r, echo = FALSE, message = FALSE}
+require(knitr)
+source('./r/helper.r')
+opts_chunk$set(echo = FALSE, message = FALSE, comment = NA)
+```
+
+```{r, engine = 'bash'}
+## run accompanying .do file to get log file for parsing
+stata-se -b -q do ../do/lecture0_introduction.do
+## convert plots used in this file to png
+pdir=../plots/
+glist=(h_poplt5_pr
+       h_poplt5_pr_reg
+       kd_poplt5_pr
+       sc_poplt5_pr
+       sc_poplt5_pr_1
+       sc_poplt5_pr_2
+       )
+for i in ${glist[@]};
+do
+convert -density 150 -flatten $pdir$i.eps $pdir$i.png;
+done
+```
+
+```{r}
+## save log file in object
+lf <- 'lecture0_introduction.log'
+```
+In this class we'll walk through some of Stata's basic
+functionality. We'll also get used to the idea of interacting with
+Stata through the command line and `*.do` files.
+
+<br>
+
+## Stata as a calculator
+
+Stata can be used as a calculator via the `display` command. All of the
+normal rules of arithmetical precedence apply to the Stata
+syntax.
+
+```{r}
+start <- 'using the display command for arithmetic'
+end <- 'using do files'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+*NB:* The `display` command can be shortened to `di`. Many
+Stata commands and options are like this. The help files underline the
+minimum part of the command/option that must be specified in order for
+the package to understand what you want.
+
+<br>
+
+## Using `*.do` files
+
+Stata syntax is stored in what's called `*.do` files. These are all of
+the typed commands that you use to manipulate and analyze the data. A
+properly formatted `*.do` file can be run from the command line using
+the `do` command:
+
+```{r}
+start <- 'using do files'
+end <- 'comment styles'
+writeLines(logparse(lf, start = start, end = end))
+```
+One of the key skills you'll learn this year is properly annotating a
+`*.do` file. Remember that these files are primarily meant to be read by
+humans, and only incidentally meant to be read by computers. Stata
+assumes that everything in a `*.do` file is a command unless it's preceded
+by a comment sign. To set off a line of text as a comment,
+place `*` or `//` in front of it. You can also use the `/* ... */` 
+format for comments, which can be used on the same line as the syntax
+itself:
+
+```{r}
+start <- 'comment styles'
+end <- 'set working directory'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+<br>
+
+## Loading Stata data files
+
+All Stata data files are saved in the `*.dta` format. Today we'll be
+using the `census.dta` file which contains information on
+characteristics of the 50 states from the 1980 census.
+
+To locate a data file, you first have to tell Stata where to look on
+your computer. With some very rare exceptions, you should always use
+the `cd` command to set the working directory:
+
+```{r}
+start <- 'set working directory'
+end <- 'filename of dataset'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+*NB:* The exception to this rule would be (1) when you double-click your
+ `*.do` file and have Stata configured to open automatically; and (2)
+ your `*.do` file is set to work in the directory in which it is
+ currently located (i.e., all the relative links are correctly
+ specified).
+
+The above directory is where I keep the class files, hence the `cd`
+command doesn't really do anything. Your files will be in
+a different location on your computer. Changing the working directory
+just once makes it *much* easier to exchange `*.do` files across
+computers. Don't place a `cd` command in your `*.do` file. This will
+make collaboration much easier.
+
+To open a Stata file, use the `use` command:
+
+```{r}
+start <- 'filename of dataset'
+end <- 'taking a look at the data: list'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+We'll go over for other commands for importing more complex data files
+later.
+
+<br>
+
+## Looking at the data
+
+### `list`
+We can use the `list` command to take a look at the data:
+
+```{r}
+start <- 'taking a look at the data: list'
+end <- 'taking a look at the data: describe'
+note <- '...and so on.'
+writeLines(c(logparse(lf, start = start, end = end)[1:24],note))
+```
+### `describe`
+As should be obvious, this usually gives too much information back. A
+better place to start with a well-formatted data file is to use the
+`describe` command:
+
+```{r}
+start <- 'taking a look at the data: describe'
+end <- 'taking a look at the data: codebook'
+writeLines(logparse(lf, start = start, end = end))
+```
+### `codebook`
+To get more information about a single variable, the`codebook`
+command is a good option:
+
+```{r}
+start <- 'taking a look at the data: codebook'
+end <- 'show me the data for the first ten states'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+### `list` with `if` statement
+
+If I add the condition `if _n < 11`, I can see data for only the first
+ten states. `_n` represents the row number
+of each observation. Since the states are in alphabetical order in the
+dataset, I can use the logical statement `_n < 11` to get the first
+ten:
+
+```{r}
+start <- 'show me the data for the first ten states'
+end <- 'just state names and populations for the first ten states'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+Most of the time, I only want to see a couple of variables. In this
+case, I'll use `list` with what Stata calls a `varlist` and is in fact
+just a list of variables. In this case, I only choose `state` and
+`pop`.
+
+```{r}
+start <- 'just state names and populations for the first ten states'
+end <- 'recoding variables'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+<br>
+
+#### QUICK EXERCISE
+> Take a look at deaths in the first 10 states. Which is highest,
+> which is lowest?
+
+<br>
+
+## Recoding variables
+
+To start off with, I'm interested in knowing which states have the
+largest proportion of the population under 5. The data only give the
+total number of people under 5, so I'm going to need a new variable,
+which will be total population under 5 divided by total population. To
+create this variable I'll need Stata's `generate` command:
+
+```{r}
+start <- 'recoding variables'
+end <- 'summarize the new variable'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+*NB:* Stata will not allow you to generate a new variable with an old
+ variable's name. `generate poplt5 = poplt5 / pop` will not work
+ because you already have a `poplt5` variable. This is a feature to
+ make sure you don't overwrite your data accidentally.
+
+<br>
+
+## Summarizing data
+
+Now that I have my new variable, let's use the summarize command to
+take a look at it:
+
+```{r}
+start <- 'summarize the new variable'
+end <- 'summarize with more detail'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+This is nice, but if I'd like even more information I should use the
+`detail` subcommand, like so:
+
+```{r}
+start <- 'summarize with more detail'
+end <- 'using the bysort command'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+<br>
+
+#### QUICK EXERCISE
+> Create a variable for the proportion of the population living in urban
+> areas. Use `summarize` to describe your new variable. What's
+> the mean and median of your new variable? 
+
+<br>
+
+## Using the `by` and `bysort` commands
+
+Many times we'd like to summarize a variable by subgroups in the
+data. For instance, what if we'd like to know which regions have the
+highest proportions of children under 5? We could try to use the `by`
+command like this, `by region: sum poplt5_pr`, but it won't
+work. Stata will refuse to run it because the data are not sorted on the
+`region` variable. However, the `bysort` command gives
+us an easy way around that problem:
+
+```{r}
+start <- 'using the bysort command'
+end <- 'univariate graphics: single plot'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+<br>
+
+#### QUICK EXERCISE
+> Create a table of proportion urban by region. Which region has the
+> highest proportion of people living in cities? 
+
+<br>  
+
+## Univariate graphics
+
+### `histogram`
+
+To describe a data point, we can use the `histogram` command. If we
+want to save the plot, we use the `graph export` command:
+
+```{r}
+start <- 'univariate graphics: single plot'
+end <- 'univariate graphics with by command'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+```{r, results = 'asis'}
+writeLines(alignfigure('../plots/h_poplt5_pr.png', 'center'))
+```
+
+### `histogram` with `by`
+
+You can combine the histogram command with a `by` command to
+show the distribution of a variable by groups:
+
+```{r}
+start <- 'univariate graphics with by command'
+end <- 'kernel density plot'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+```{r, results = 'asis'}
+writeLines(alignfigure('../plots/h_poplt5_pr_reg.png', 'center'))
+```
+
+### `kdensity`
+
+You can also use the `kdensity` command to describe the data
+using a kernel density plot:
+
+```{r}
+start <- 'kernel density plot'
+end <- 'generate proportion over 65'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+```{r, results = 'asis'}
+writeLines(alignfigure('../plots/kd_poplt5_pr.png', 'center'))
+```
+
+<br>
+
+#### QUICK EXERCISE
+> List state name and population less than 5 if population less than 5
+> is greater than .1
+
+<br>
+
+## Bivariate graphics
+
+### `scatter`plot
+
+A scatterplot is a very useful tool for the looking at the
+relationship between two (or more) variables. Right now I'd like to
+look at the relationship between the number of children under 5 and
+the number of people over 65. The variable `pop65p` is not a
+proportion, so I need to generate a new proportion variable to get
+them both on the same scale:
+
+```{r}
+start <- 'generate proportion over 65'
+end <- 'scatterplot of young population as a function of older population'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+With my new variable, I can now create a scatterplot: 
+
+```{r}
+start <- 'generate proportion over 65'
+end <- 'add state labels'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+```{r, results = 'asis'}
+writeLines(alignfigure('../plots/sc_poplt5_pr.png', 'center'))
+```
+
+We can add state labels:
+
+```{r}
+start <- 'add state labels'
+end <- 'change label size'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+```{r, results = 'asis'}
+writeLines(alignfigure('../plots/sc_poplt5_pr_1.png', 'center'))
+```
+
+The labels are too big. We can make them smaller.
+
+```{r}
+start <- 'change label size'
+end <- 'end file'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+```{r, results = 'asis'}
+writeLines(alignfigure('../plots/sc_poplt5_pr_2.png', 'center'))
+```
+
+## EXERCISES
+
+1.  Create variables for rate of marriages and divorces
+2.  Which region has the highest rates of marriage and divorce in the
+    population? 
+3.  What do the distributions of these two variables look like?
+4.  What does a scatterplot say about the possible relationship
+    between the two? 
+
+<br><br>
+
+*Init: 07 June 2015; Updated: `r format(Sys.Date(), format = "%d %B %Y")`*
+
+<br>

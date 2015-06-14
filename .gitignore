@@ -1,0 +1,4 @@
+
+# only push markdown files
+/markdown/*
+!/markdown/*.rmd
