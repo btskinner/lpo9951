@@ -1,4 +1,6 @@
 
-# only push markdown files
-/markdown/*
-!/markdown/*.rmd
+# R files
+*.Rhistory
+
+# Stata files
+*.log
