@@ -72,13 +72,17 @@ logparse <- function(logfile, start = NULL, end = NULL, include = FALSE) {
         f <- f[c(1:end)]
     }
 
-    ## strip start and stop lines (plus Stata periods)
+    ## strip start and stop lines
     if (!include) {
 
-        newend <- length(f) - 2
-        f <- f[3:newend]
+        newend <- length(f) - 1
+        f <- f[2:newend]
 
     }
+
+    ## strip period only lines
+    blankrows <- grep('^\\. $', f)
+    f <- f[-(blankrows)]
     
     ## return
     return(f)
