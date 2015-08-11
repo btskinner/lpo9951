@@ -4,3 +4,9 @@
 
 # Stata files
 *.log
+
+# Data directory - generally want to ignore big and created files
+/data/*
+
+!/data/school_data.csv
+!/data/census.dta

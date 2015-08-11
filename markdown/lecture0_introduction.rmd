@@ -10,13 +10,13 @@ output:
 
 ```{r, echo = FALSE, message = FALSE}
 require(knitr)
-source('./r/helper.r')
+source('./r/stataknitrhelper.r')
 opts_chunk$set(echo = FALSE, message = FALSE, comment = NA)
 ```
 
 ```{r, engine = 'bash'}
 ## run accompanying .do file to get log file for parsing
-stata-se -b -q do ../do/lecture0_introduction.do
+stata -b -q do ../do/lecture0_introduction.do
 ## convert plots used in this file to png
 pdir=../plots/
 glist=(h_poplt5_pr
@@ -36,6 +36,11 @@ done
 ## save log file in object
 lf <- 'lecture0_introduction.log'
 ```
+
+<br>
+
+#### PURPOSE
+
 In this class we'll walk through some of Stata's basic
 functionality. We'll also get used to the idea of interacting with
 Stata through the command line and `*.do` files.

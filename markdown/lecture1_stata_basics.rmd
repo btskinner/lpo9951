@@ -10,19 +10,28 @@ output:
 
 ```{r, echo = FALSE, message = FALSE}
 require(knitr)
-source('./r/helper.r')
+source('./r/stataknitrhelper.r')
 opts_chunk$set(echo = FALSE, message = FALSE, comment = NA)
 ```
 
 ```{r, engine = 'bash'}
 ## run accompanying .do file to get log file for parsing
-stata-se -b -q do ../do/lecture1_stata_basics.do	 
+stata -b -q do ../do/lecture1_stata_basics.do	 
 ```
 
 ```{r}
 ## save log file in object
 lf <- 'lecture1_stata_basics.log'
 ```
+
+<br>
+
+#### PURPOSE
+
+In this class we'll continue exploring some of Stata's basic
+functionality.
+
+<br>
 
 ## A template for `do` files
 All `*.do` files for this course should follow the outline provided by the

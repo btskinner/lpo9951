@@ -1,0 +1,266 @@
+---
+title: NCES Datasets
+author: Benjamin Skinner
+output: 
+  html_document:
+   toc: true
+   theme: cosmo
+   css: ./css/custom.css
+---
+
+```{r, echo = FALSE, message = FALSE}
+require(knitr)
+source('./r/stataknitrhelper.r')
+opts_chunk$set(echo = FALSE, message = FALSE, comment = NA, cache = FALSE)
+```
+
+```{r, engine = 'bash'}
+## run accompanying .do file to get log file for parsing
+stata -b -q do ../do/lecture2_nces_datasets.do	 
+```
+
+```{r}
+## save log file in object
+lf <- 'lecture2_nces_datasets.log'
+```
+
+<br>
+
+#### PURPOSE
+
+Today we will work on downloading data files from the NCES and OECD
+databases. While these data files represent only a fraction of publicly
+available data (which themselves are only a fraction of all
+potentially available data), they are some of the most widely used in
+education research.
+
+## EDAT
+
+NCES has created a very useful data tool called EDAT, which I assume
+stands for something clever. The intent behind this web-based
+application is to allow you to select the variables that you would
+like to work with, then to generate syntax (in our case, do files)
+that will allow you to access this data. Today, we'll go through how
+to generate a very basic analysis dataset from all four of the
+surveys that you will be working with as a group. The process for
+each is broadly the same:
+
+* Select variables
+* Download syntax and data (only need to download the data the first time)
+* Adjust syntax as appropriate (rewrite do-file to our specifications)
+* Generate analysis dataset
+
+This process, like all other work, should be tracked carefully. Some
+simple steps at the beginning can save you lots of time at the end.
+
+I will also show you how to download the full datasets for each survey
+today. While EDAT may entirely serve your data-gathering needs (at
+least for these surveys), you may in the future easier to simply
+gather all of available data on your computer with a few lines of
+code, avoiding the point-and-click aspects of EDAT altogether and
+increasing the reproducibility of your project.
+
+## Directory structure and global variables
+
+First things first, let's talk about directory structure. As you may
+have noticed in the files we've used in the past couple lectures, data
+files and Stata do files have been stored in their own subdirectories
+(folders), While it's possible to simply dump everything in one big
+directory, you may find that over time, as the folder grows, it
+becomes very difficult to find what you need and almost impossible to
+share your work with others. An organized directory structure is for
+you. Get into the habit now, and you'll be thankful later.
+
+One way to facilitate this organization when downloading data is to
+set up global variables (sometimes called macros) that stand in place
+of your directory path. See the top part of the do file for an
+example:
+
+```{r}
+start <- 'set globals for entire file'
+end <- 'display globals'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+Note that globals follow the pattern: `global <name> <value>`.
+To call a global macro in Stata, you place a `$` in front of the name
+you gave it. Stata will replace that with the value. Here are some
+examples with `display`:
+
+```{r}
+start <- 'display globals'
+end <- 'Educational'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+#### NOTE: Most calls of the Stata global macro do not require quotation marks.That is a quirk of Stata's `display` command. 
+
+<br>
+
+## Educational Longitudinal Study, 2002 (ELS)
+
+### Download data
+
+First, let's download the entirety of the ELS file. While this may
+seem like overkill, note that even if you use EDAT and subset the
+variables you actually want, you will end up downloading all of ELS
+anyway (just the way it works). First, let's set new globals:
+
+```{r}
+start <- 'set globals for ELS files'
+end <- 'download zipped ELS data file into data directory'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+Next, download the file to the data folder using the `copy` command,
+which takes the form `copy <from> <to>`. Notice how we use the globals
+to set the `<from>` and `<to>`, which saves us from having to retype
+the local directory structure and has the added benefit of naming the
+locations in such a way to make their meanings clear. Note that the
+file is large so it may take a few minutes
+
+```{r}
+start <- 'download zipped ELS data file into data directory'
+end <- 'unzip ELS file'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+### Unzip data
+
+Now, that the file is downloaded, we need to unzip it with
+`unzipfile`. Stata will only unzip a file into the current directory,
+so in order to have it go into our data directory like we want, we
+need to use the `cd` command to change directory into our data
+directory and return to the working directory after we've unzipped the
+file. This is why we saved the `workdir` at the top of the file.
+
+```{r}
+start <- 'unzip ELS file'
+end <- 'change delimiter to a semi-colon -1-'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+### Subset data
+
+ELS data files are very large, so they cannot be opened up all at
+once. For any given project, you don't want or need all of the
+variables anyway. To subset the full dataset to only those variables
+we want requires the `use using` setup, as follows (note how we
+temporariliy change the delimiter to make our lives a little easier):
+
+```{r}
+start <- 'change delimiter to a semi-colon -1-'
+end <- 'Early Childhood'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+#### QUICK EXERCISE
+> Using EDAT, generate an ELS dataset that includes student demographics
+> and whether or not the student attended college.
+
+<br>
+
+## Early Childhood Longitudinal Study - Kindergarten 98-99 (ECLS-K)
+
+### Download and unzip data
+
+Downloading and unzipping ECLS-K follows the same method that we used
+for ELS. It's *really* big, so you really only want to download it once.
+
+```{r}
+start <- 'Early Childhood Longitudinal Study - Kindergarten'
+end <- 'read in ECLS file'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+### Subset data
+
+Also like the ELS files, the ECLS-K data files are too large to load
+all at once. Furthermore, they require a separate dictionary file to
+properly read in the data:
+
+```{r}
+start <- 'read in ECLS file'
+end <- 'High School Longitudinal Study'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+#### QUICK EXERCISE
+> Using EDAT, generate an ECLS-K dataset that includes student
+> demographics and student IRT math scores from the first three waves.
+
+<br>
+
+## High School Longitudinal Study, 2009 (HSLS)
+
+### Download, unzip, and subset data
+
+The process for downloading, unzipping, and subsetting data from HSLS
+is the same as for ELS. In interest of completeness, the code is
+reproduced in full below:
+
+```{r}
+start <- 'High School Longitudinal Study'
+end <- 'Programme for International Student Assessment'
+writeLines(logparse(lf, start = start, end = end))
+```
+<br>
+
+## Programme for International Student Assessment (PISA)
+
+### Download and unzip data
+
+Not all datasets, of course, come from the NCES. One major dataset,
+PISA, is conducted and hosted by the Organization for Economic
+Co-operation and Development or OECD. To get these data, we'll once
+again use the same process for downloading and unzipping files. Note
+that the global `baseurl` has changed:
+
+```{r}
+start <- 'Programme for International Student Assessment'
+end <- 'store variables'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+### Subset data
+
+PISA uses a fixed-width format for storing data that is common, but
+not as user friendly. The first 3 lines of text look like this (they
+are long so they wrap in this view):
+
+```
+ALB0080000ALB00060000800000000100001 777777777790100177237002777114393137900772077777777771077777777777772077777709r100777777777777777777777777777777777777777777777777777777777777777777777777773777002277771117773103777777777777232141777777777779797979997979797979997777799941232121121199972222222999712777777777777777777777777777777777777777777771127772117777777777777212121127777777777714028NOV13
+ALB0080000ALB00060000800000000100002 97077777777077737727710270777977773791177777719977777777777777777777777773397777771907777777777777777777777711777111999993311111918877734077103099127777777777777777777777777777777777777777777777777777777777797979797979797979799977777777214312211211 1007777777999777211112777711111199117777777771112211177777777777777777777777777777777777777777777777714028NOV13
+ALB0080000ALB00060000800000000100003 39777777777177717747710470777377773701919777777777233774211777777777777777777777777777777777777777777777710477024777777777777777777711B77710777777771110217771B37777802877777777777777777773127777777771092212197979797979797019799977777777421322111112
+```
+
+To read the data into Stata, we have to use the `infix` command, which
+requires that we know the column of each variable that we need. It
+also helps if we know the data format (e.g., string vs. integer
+vs. float,
+etc.). [Having a codebook like this is absolutely necessary](http://pisa2012.acer.edu.au/downloads/M_stu_codebook.pdf). Knowing
+what is needed, we can finally read in the data and save a reduced
+dataset. Because the string is long, I've stored the entire thing in a
+local using the comand `local <name> ...`. Locals work just like
+globals except they only last for as long as the script is running. To
+call a local, surround the local name by left and right ticks. Note,
+that a left tick is different from a right tick. On most keyboards,
+the left tick is above the tab key on the lefthand side of the keyboard.
+
+```{r}
+start <- 'store variables'
+end <- 'end file'      
+writeLines(logparse(lf, start = start, end = end))
+```
+
+#### QUICK EXERCISE
+> Following the link above, figure out the column for the variable
+> about the number of computers in the household, add it to the list,
+> and read in the new expanded data.
+
+<br>
+<br>
+
+*Init: 03 August 2015; Updated: `r format(Sys.Date(), format = "%d %B %Y")`*
+
+<br>
