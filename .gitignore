@@ -1,4 +1,7 @@
 
+# Plots
+*.eps
+
 # R files
 *.Rhistory
 
