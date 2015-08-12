@@ -11,7 +11,10 @@ This course is the first of a three semester series of courses designed to intro
 
 # Instructor
 
-[Benjamin Skinner](http://btskinner.me)
-4th year PhD Student
-Department of Leadership, Policy, and Organizations
+[Benjamin Skinner](http://btskinner.me)  
+
+4th year PhD Student  
+
+Department of Leadership, Policy, and Organizations  
+
 Room 207F, Payne Hall
