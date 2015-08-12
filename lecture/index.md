@@ -14,7 +14,7 @@ The schedule for all class meetings is as follows:
 
 #### TOPICS
 
-Class introduction
+[Class introduction](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture1_introduction.html)
 
 #### ASSIGNMENTS
 
