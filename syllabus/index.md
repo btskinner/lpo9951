@@ -1,0 +1,287 @@
+---
+layout: default
+title: Syllabus
+author: Benjamin Skinner
+---
+
+<!-- /////////////////////////////////////////////////////////////////////// -->
+## Course Overview
+
+The overview includes an introduction to the course, guidelines on
+grading, and required texts.
+
+<!-- /////////////////////////////////////////////////////////////////////// -->
+## Introduction
+
+This course is the first of a three semester series of courses
+designed to introduce you to the *practice* of research,
+particularly the applied side of quantitative research. The goal of
+this course to help you to prepare a paper that can be presented at
+a major research conference and, hopefully, submitted to a journal
+for publication.
+
+To accomplish this goal, you will choose from among publicly
+available datasets. You will identify a research topic, then later a
+research question. You will create a dataset using the NCES survey
+and other publicly available sources. By the end of the semester,
+you will have a properly formatted and cleaned dataset, with
+auxiliary information from other sources included. Next semester we
+will analyze this dataset. By the end of May, you will complete a
+paper based on this analysis.
+
+Along the way, you will develop skills that will be helpful in
+future work using any kind of data. This class has a strong emphasis
+on using programming skills to aid in the replication of work and to
+simplify complex analyses.
+
+<!-- /////////////////////////////////////////////////////////////////////// -->
+## Grading
+
+### Assignments
+
+There will be a total of ten assignments, which will be graded
+pass/fail. Late assignments will not be accepted. These assignments
+will account for half of your grade. Collaboration on assignments is
+fine, however, many of the assignments will ask you to work with
+variables and datasets of your own choosing.
+
+#### TOTAL: 50%
+
+### Summary Paper and Codebook
+
+At the end of the semester, you will need to present the results of
+your data collection efforts, with a summary paper of no more than
+five pages of text, accompanied by properly formatted tables and
+graphics. The summary paper and codebook will be due on December
+9. You will present your work to the rest of the class on December
+9.
+
+#### TOTAL: 50%
+
+<!-- /////////////////////////////////////////////////////////////////////// -->
+## Texts
+
+The following texts are available in the bookstore or online:
+
+* Baum, C. (2006). *An Introduction to Modern Econometrics Using
+STATA*. College Station: STATA Press
+
+* Long, J.S. (2009). *The Workflow of Data Analysis Using Stata*.
+College Station: STATA Press
+
+For this semester, both of these books are *optional*. I will
+recommend a few chapters from both as the semester progresses, but the
+class notes are the only required reading.
+
+<!-- /////////////////////////////////////////////////////////////////////// -->
+## Software
+
+You need to have access to a working version of Stata 14.
+Stata is installed on computers on Peabody campus, including our
+classroom (Wyatt 13), and on stations in the Peabody library. You
+are not required to purchase Stata, but you will need to use it for
+class assignments. I strongly recommend, however, that you purchase it.
+
+If you do purchase Stata, you will need at least Stata IC. Vanderbilt
+has what's called a gradplan with Stata under which you can purchase
+the software at greatly reduced prices. Stata SE is a more powerful
+version of Stata that is useful for the larger datasets many of you
+may be working with.
+
+<!-- /////////////////////////////////////////////////////////////////////// -->
+## Honor Code
+
+For this course, you are bound by the terms of the Peabody Honor
+System. Any breach of academic honesty, including cheating,
+plagiarism, or failing to report a known or suspected violation of the
+Code will be reported to the Honor Council. In particular, papers must
+assign credit to the sources you use. Material borrowed from
+another---quotations, paraphrases, key words, or ideas---must be
+credited following appropriate citation procedures (footnotes and
+bibliography). As mentioned above, collaboration **is** permitted
+on assignments but **is not** permitted on your summary paper and
+codebook. If you have any doubts, please ask me for
+clarification. Uncertainty about the application of the Honor Code
+does not excuse a violation.
+
+<!-- /////////////////////////////////////////////////////////////////////// -->
+## Schedule of Meetings
+
+The schedule for all class meetings is as follows:
+
+<!-- ======================================================================= -->
+### August 26
+
+##### TOPICS
+
+Class introduction
+
+##### ASSIGNMENTS
+
+Assignment 1 due September 1, midnight
+
+
+<!-- ======================================================================= -->
+### September 2
+
+##### TOPICS
+
+Stata basics
+
+##### ASSIGNMENTS
+
+Assignment 2 due September 8, midnight
+
+
+<!-- ======================================================================= -->
+### September 9
+
+##### TOPICS
+
+Working with NCES databases
+
+##### ASSIGNMENTS
+
+Assignment 3 due September 15, midnight
+
+
+<!-- ======================================================================= -->
+### September 16
+
+##### TOPICS
+
+Dataset manipulation: Collapsing, merging, bending the data to your will
+
+##### ASSIGNMENTS
+
+Assignment 4 due September 22, midnight; summary research area due
+
+
+<!-- ======================================================================= -->
+### September 23
+
+##### TOPICS
+
+More dataset manipulation: One to many merging, many to one merging,
+appending datasets
+
+##### ASSIGNMENTS
+
+Assignment 5 due September 29, midnight
+
+
+<!-- ======================================================================= -->
+### September 30
+
+##### TOPICS
+
+Introduction to programming and helpful functions
+
+##### ASSIGNMENTS
+
+Assignment 6 due October 6, midnight
+
+
+<!-- ======================================================================= -->
+### October 7
+
+##### TOPICS
+
+Sampling: Simple sampling designs
+
+##### ASSIGNMENTS
+
+Assignment 7 due October 13, midnight
+
+
+<!-- ======================================================================= -->
+### October 14
+
+##### TOPICS
+
+Sampling: Complex sampling designs
+
+##### ASSIGNMENTS
+
+Assignment 8 due October 20, midnight; research questions due
+
+
+<!-- ======================================================================= -->
+### October 21
+
+##### TOPICS
+
+Data cleaning
+
+##### ASSIGNMENTS
+
+Assignment 9 due October 27, midnight
+
+
+<!-- ======================================================================= -->
+### October 28
+
+##### TOPICS
+
+Data validation
+
+##### ASSIGNMENTS
+
+Assignment 10 due November 3, midnight
+
+
+<!-- ======================================================================= -->
+### November 4
+
+##### TOPICS
+
+Descriptive statistics: Tabular and graphical approaches
+
+
+<!-- ======================================================================= -->
+### November 11
+
+##### TOPICS
+
+Further topics in programming Stata
+
+
+<!-- ======================================================================= -->
+### November 18
+
+##### TOPICS
+
+Graphical approaches to describing data
+
+
+<!-- ======================================================================= -->
+### November 25
+
+Thanksgiving Break - No Class
+
+
+<!-- ======================================================================= -->
+### December 2
+
+##### TOPICS
+
+Topic TBA: based on student work
+
+##### ASSIGNMENTS
+
+Summary Papers, Do-File and Codebooks due before class, December 9
+
+
+<!-- ======================================================================= -->
+### December 9
+
+Class Presentations
+
+
+<!-- /////////////////////////////////////////////////////////////////////// -->
+<br><br>
+
+*Init: 01 July 2015; Updated: `r format(Sys.Date(), format = "%d %B %Y")`*
+
+<br>
+<!-- /////////////////////////////////////////////////////////////////////// -->
