@@ -1,5 +1,5 @@
 capture log close                       // closes any logs, should they be open
-log using "lecture0_introduction.log", replace    // open new log
+log using "lecture1_introduction.log", replace    // open new log
 
 // NAME: Introduction
 // FILE: lecture0_introduction.do
@@ -21,7 +21,7 @@ di (sqrt(42) + 4) - 10
 
 // using do files
 
-do "../do/lecture0_introduction_hello.do"
+do "../do/lecture1_introduction_hello.do"
 
 // comment styles
 
@@ -34,7 +34,7 @@ di 2           /* side of commands */
 
 // set working directory
 
-cd "~/Github/practicum3921/markdown"
+cd "~/Github/lpo9951/markdown"
 
 // filename of dataset
 
