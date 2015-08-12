@@ -4,14 +4,12 @@ title: Syllabus
 author: Benjamin Skinner
 ---
 
-<!-- /////////////////////////////////////////////////////////////////////// -->
-## Course Overview
+# Course Overview
 
 The overview includes an introduction to the course, guidelines on
 grading, and required texts.
 
-<!-- /////////////////////////////////////////////////////////////////////// -->
-## Introduction
+# Introduction
 
 This course is the first of a three semester series of courses
 designed to introduce you to the *practice* of research,
@@ -34,10 +32,9 @@ future work using any kind of data. This class has a strong emphasis
 on using programming skills to aid in the replication of work and to
 simplify complex analyses.
 
-<!-- /////////////////////////////////////////////////////////////////////// -->
-## Grading
+# Grading
 
-### Assignments
+## Assignments
 
 There will be a total of ten assignments, which will be graded
 pass/fail. Late assignments will not be accepted. These assignments
@@ -45,9 +42,9 @@ will account for half of your grade. Collaboration on assignments is
 fine, however, many of the assignments will ask you to work with
 variables and datasets of your own choosing.
 
-#### TOTAL: 50%
+### TOTAL: 50%
 
-### Summary Paper and Codebook
+## Summary Paper and Codebook
 
 At the end of the semester, you will need to present the results of
 your data collection efforts, with a summary paper of no more than
@@ -56,10 +53,9 @@ graphics. The summary paper and codebook will be due on December
 9. You will present your work to the rest of the class on December
 9.
 
-#### TOTAL: 50%
+### TOTAL: 50%
 
-<!-- /////////////////////////////////////////////////////////////////////// -->
-## Texts
+# Texts
 
 The following texts are available in the bookstore or online:
 
@@ -73,8 +69,7 @@ For this semester, both of these books are *optional*. I will
 recommend a few chapters from both as the semester progresses, but the
 class notes are the only required reading.
 
-<!-- /////////////////////////////////////////////////////////////////////// -->
-## Software
+# Software
 
 You need to have access to a working version of Stata 14.
 Stata is installed on computers on Peabody campus, including our
@@ -88,8 +83,7 @@ the software at greatly reduced prices. Stata SE is a more powerful
 version of Stata that is useful for the larger datasets many of you
 may be working with.
 
-<!-- /////////////////////////////////////////////////////////////////////// -->
-## Honor Code
+# Honor Code
 
 For this course, you are bound by the terms of the Peabody Honor
 System. Any breach of academic honesty, including cheating,
@@ -104,184 +98,164 @@ codebook. If you have any doubts, please ask me for
 clarification. Uncertainty about the application of the Honor Code
 does not excuse a violation.
 
-<!-- /////////////////////////////////////////////////////////////////////// -->
-## Schedule of Meetings
+# Schedule of Meetings
 
 The schedule for all class meetings is as follows:
 
-<!-- ======================================================================= -->
-### August 26
+## August 26
 
-##### TOPICS
+#### TOPICS
 
 Class introduction
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 1 due September 1, midnight
 
 
-<!-- ======================================================================= -->
-### September 2
+## September 2
 
-##### TOPICS
+#### TOPICS
 
 Stata basics
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 2 due September 8, midnight
 
 
-<!-- ======================================================================= -->
-### September 9
+## September 9
 
-##### TOPICS
+#### TOPICS
 
 Working with NCES databases
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 3 due September 15, midnight
 
 
-<!-- ======================================================================= -->
-### September 16
+## September 16
 
-##### TOPICS
+#### TOPICS
 
 Dataset manipulation: Collapsing, merging, bending the data to your will
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 4 due September 22, midnight; summary research area due
 
 
-<!-- ======================================================================= -->
-### September 23
+## September 23
 
-##### TOPICS
+#### TOPICS
 
 More dataset manipulation: One to many merging, many to one merging,
 appending datasets
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 5 due September 29, midnight
 
 
-<!-- ======================================================================= -->
-### September 30
+## September 30
 
-##### TOPICS
+#### TOPICS
 
 Introduction to programming and helpful functions
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 6 due October 6, midnight
 
 
-<!-- ======================================================================= -->
-### October 7
+## October 7
 
-##### TOPICS
+#### TOPICS
 
 Sampling: Simple sampling designs
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 7 due October 13, midnight
 
 
-<!-- ======================================================================= -->
-### October 14
+## October 14
 
-##### TOPICS
+#### TOPICS
 
 Sampling: Complex sampling designs
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 8 due October 20, midnight; research questions due
 
+## October 21
 
-<!-- ======================================================================= -->
-### October 21
-
-##### TOPICS
+#### TOPICS
 
 Data cleaning
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 9 due October 27, midnight
 
 
-<!-- ======================================================================= -->
-### October 28
+## October 28
 
-##### TOPICS
+#### TOPICS
 
 Data validation
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Assignment 10 due November 3, midnight
 
 
-<!-- ======================================================================= -->
-### November 4
+## November 4
 
-##### TOPICS
+#### TOPICS
 
 Descriptive statistics: Tabular and graphical approaches
 
 
-<!-- ======================================================================= -->
-### November 11
+## November 11
 
-##### TOPICS
+#### TOPICS
 
 Further topics in programming Stata
 
+## November 18
 
-<!-- ======================================================================= -->
-### November 18
-
-##### TOPICS
+#### TOPICS
 
 Graphical approaches to describing data
 
 
-<!-- ======================================================================= -->
-### November 25
+## November 25
 
 Thanksgiving Break - No Class
 
 
-<!-- ======================================================================= -->
-### December 2
+## December 2
 
-##### TOPICS
+#### TOPICS
 
 Topic TBA: based on student work
 
-##### ASSIGNMENTS
+#### ASSIGNMENTS
 
 Summary Papers, Do-File and Codebooks due before class, December 9
 
-
-<!-- ======================================================================= -->
-### December 9
+## December 9
 
 Class Presentations
 
 
-<!-- /////////////////////////////////////////////////////////////////////// -->
+
 <br><br>
 
-*Init: 01 July 2015; Updated: `r format(Sys.Date(), format = "%d %B %Y")`*
+*Init: 01 July 2015; Updated: 12 August 2015*
 
 <br>
-<!-- /////////////////////////////////////////////////////////////////////// -->
+
