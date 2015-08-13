@@ -92,8 +92,8 @@ Code will be reported to the Honor Council. In particular, papers must
 assign credit to the sources you use. Material borrowed from
 another---quotations, paraphrases, key words, or ideas---must be
 credited following appropriate citation procedures (footnotes and
-bibliography). As mentioned above, collaboration **is** permitted
-on assignments but **is not** permitted on your summary paper and
+bibliography). As mentioned above, collaboration is permitted
+on assignments but is not permitted on your summary paper and
 codebook. If you have any doubts, please ask me for
 clarification. Uncertainty about the application of the Honor Code
 does not excuse a violation.
