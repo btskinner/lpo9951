@@ -8,54 +8,71 @@ The schedule for all class meetings is as follows. Assignments are given in the 
 
 ## August 26
 
-LECTURE 1: [Class introduction](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture1_introduction.html)
+**Class Introduction**  
 
-ASSIGNMENT 1:
+LECTURE 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture1_introduction.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture1_introduction.pdf)]  
+
+ASSIGNMENT 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment1.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment1.pdf)]  
 
 
 ## September 2
 
-LECTURE 2: [Stata basics](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture2_stata_basics.html)
+**Stata Basics**
+
+LECTURE 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture2_stata_basics.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture2_stata_basics.pdf)]  
 
 ASSIGNMENT 2:
 
 
 ## September 9
 
-LECTURE 3: [Working with NCES datasets](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture3_nces_datasets.html)
+**Working with NCES Datasets**
+
+LECTURE 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture3_nces_datasets.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture3_nces_datasets.pdf)]  
 
 ASSIGNMENT 3:
 
 ## September 16
 
-LECTURE 4: Dataset manipulation: Collapsing, merging, bending the data to your will
+**Dataset Manipulation: Collapsing, merging, bending the data to your will**
+
+LECTURE 4: 
 
 ASSIGNMENT 4:  
+
 ADDITIONAL: Summary research area
 
 
 ## September 23
 
-LECTURE 5: More dataset manipulation: One to many merging, many to one merging, appending datasets
+**More Dataset Manipulation: One to many merging, many to one merging, appending datasets**
+
+LECTURE 5: 
 
 ASSIGNMENT 5:
 
 ## September 30
 
-LECTURE 6: Introduction to programming and helpful functions
+**Introduction to Programming and Helpful Functions**
+
+LECTURE 6: 
 
 ASSIGNMENT 6: 
 
 ## October 7
 
-LECTURE 7: Sampling: Simple sampling designs
+**Sampling: simple sampling designs**
+
+LECTURE 7: 
 
 ASSIGNMENT 7: 
 
 
 ## October 14
 
-LECTURE 8: Sampling: Complex sampling designs
+**Sampling: complex sampling designs**
+
+LECTURE 8: 
 
 ASSIGNMENT 8:  
 
@@ -63,44 +80,56 @@ ADDITIONAL: Research questions
 
 ## October 21
 
-LECTURE 9: Data cleaning
+**Data Cleaning**
+
+LECTURE 9: 
 
 ASSIGNMENT 9:
 
 ## October 28
 
-LECTURE 10: Data validation
+**Data Validation**
+
+LECTURE 10: 
 
 ASSIGNMENT 10: 
 
 ## November 4
 
-LECTURE 11: Descriptive statistics: Tabular and graphical approaches
+**Descriptive Statistics: tabular and graphical approaches**
+
+LECTURE 11: 
 
 
 ## November 11
 
-LECTURE 12: Further topics in programming Stata
+**Further Topics in Programming Stata**
+
+LECTURE 12: 
 
 ## November 18
 
-LECTURE 13: Graphical approaches to describing data
+**Graphical Approaches to Describing Data**
+
+LECTURE 13: 
 
 
 ## November 25
 
-Thanksgiving Break - No Class
+*Thanksgiving Break - No Class*
 
 
 ## December 2
 
-LECTURE TBA: *Based on student work*
+**TBA: based on student work**
+
+LECTURE: *TBA* 
 
 FINAL ASSIGNMENT: Summary Papers, Do-File, Codebooks
 
 ## December 9
 
-Class Presentations
+**Class Presentations**
 
 
 
