@@ -1,5 +1,7 @@
+assignments/answers/
 /data/*
 markdown/
 plots/
+students/
 
 !/data/index.md
