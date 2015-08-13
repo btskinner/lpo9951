@@ -1,6 +1,6 @@
 ---
 title: Introduction to Stata
-author: Benjamin Skinner
+author: LPO 9951 | Fall 2015
 output: 
   html_document:
    toc: true

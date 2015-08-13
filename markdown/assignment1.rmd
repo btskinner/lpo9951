@@ -1,0 +1,53 @@
+---
+title: Assignment 1
+author: LPO 9951 | Fall 2015
+output: 
+  html_document:
+   theme: cosmo
+   css: ./css/custom.css
+---
+
+For this first assignment, I will ask you to describe a research
+question and choose a database to work with. We will revise your
+research question over the coming months, so consider this just a
+first draft. For next week, write a one page summary that contains the
+following: 
+
+* A problem statement: what is the issue and why is it important?
+* A research question: ask a question that will help to illuminate the
+      problem. Your research question should include the population
+      under study, the unit of analysis, and the dependent and
+      independent variables.
+* The data that you wish to use to analyze this question, and if
+      possible, some of the specific variables which you would like to
+      use.
+
+As mentioned, I will ask you to revise this substantially over the
+course of the semester, so at this point, just do your best to create
+such a statement.
+
+You will need to know about the questions that were asked to develop
+the Early Childhood Longitudinal Program, the Education Longitudinal
+Study, the High School Longitudinal Study or the Programme for
+International Student Assessment. You can find them here:   
+
+[ECLS](http://nces.ed.gov/ecls/kinderinstruments.asp)  
+
+[ELS](http://nces.ed.gov/surveys/els2002/questionnaires.asp)  
+
+[HSLS](http://nces.ed.gov/surveys/hsls09/questionnaires.asp)  
+
+[PISA](http://pisa2012.acer.edu.au/downloads.php)  
+
+Taking a look at these questionnaires will help to give you an idea of
+which research questions you may be able to answer using these
+databases. You will need your selected dataset to complete assignments
+for the course. The first assignment based on these will be due in two
+weeks.  
+
+During the next week, you should ensure that you have access to
+Stata and the relevant data. You can download the datasets from the
+class website. Please do so before the next class meeting. Go ahead an
+download them all so that we can use them in class.
+
+<br>
