@@ -4,9 +4,13 @@ layout: default
 
 # Data  
 
-[census.dta](https://github.com/btskinner/lpo9951/blob/ master/data/census.dta?raw=true)  
-[school_data.csv](https://github.com/btskinner/lpo9951/blob/master/data/school_data.csv?raw=true)  
+[census](https://github.com/btskinner/lpo9951/blob/ master/data/census.dta?raw=true) [Stata] ~ 5 KB      
+[ECLS-K (1998-99)](http://nces.ed.gov/edat/data/zip/ECLSK_1998-99_v1_0_Stata_Datasets.zip) [zip] ~ 273.7 MB  
+[ELS (2002) student](http://nces.ed.gov/edat/data/zip/ELS_2002-12_PETS_v1_0_Student_Stata_Datasets.zip) [zip] ~ 16.8 MB  
+[HSLS (2009)](http://nces.ed.gov/edat/data/zip/HSLS_2009_v2_0_Stata_Datasets.zip) [zip] ~ 135.7 MB  
+[PISA (2012) student](http://pisa2012.acer.edu.au/downloads/INT_COG12_DEC03.zip) [zip] ~ 27.8 MB   
+[school_data](https://github.com/btskinner/lpo9951/blob/master/data/school_data.csv?raw=true) [csv] ~ 4 KB 
 
 # Auxiliary files
 
-[nces\_datasets\_ecls.dct](https://raw.githubusercontent.com/btskinner/lpo9951/master/aux/nces_datasets_ecls.dct)
+[nces\_datasets\_ecls.dct](hhttps://raw.githubusercontent.com/btskinner/lpo9951/master/aux/nces_datasets_ecls.dct)
