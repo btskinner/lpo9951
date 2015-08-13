@@ -22,7 +22,7 @@ ASSIGNMENT 2:
 
 ## September 9
 
-LECTURE 3: Working with NCES databases
+LECTURE 3: [Working with NCES datasets](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture3_nces_datasets.html)
 
 ASSIGNMENT 3:
 
