@@ -12,4 +12,11 @@
 /data/*
 
 !/data/school_data.csv
+!/data/caschool.dta
 !/data/census.dta
+
+# Assignment answers
+/assignments/answers
+
+# Student files
+/student
