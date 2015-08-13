@@ -82,6 +82,27 @@ the software at greatly reduced prices. Stata SE is a more powerful
 version of Stata that is useful for the larger datasets many of you
 may be working with.
 
+# Submission of work
+
+Unless given other instructions, all assignment files should be submitted with the following naming convention,
+
+```<yymmdd>_<file name>_<lastname>.*
+```
+where 
+
+* `yymmdd` is the year, month, and day in two-digit format (e.g., *150901*)
+* `file name` describes the file (e.g., *assignment1*)
+* `lastname` is your last name
+
+For example:
+
+```
+150901_assignment1_skinner.docx
+150908_assignment2_skinner.do
+```
+
+For assignments, the year, month and day should be the day the assignment is due.
+
 # Honor Code
 
 For this course, you are bound by the terms of the Peabody Honor
