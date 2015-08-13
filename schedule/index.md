@@ -30,7 +30,7 @@ ASSIGNMENT 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 LECTURE 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture3_nces_datasets.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture3_nces_datasets.pdf)]  
 
-ASSIGNMENT 3:
+ASSIGNMENT 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment3.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment3.pdf)]
 
 ## September 16
 
