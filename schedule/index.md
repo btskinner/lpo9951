@@ -21,7 +21,7 @@ ASSIGNMENT 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 LECTURE 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture2_stata_basics.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture2_stata_basics.pdf)]  
 
-ASSIGNMENT 2:
+ASSIGNMENT 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment2.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment2.pdf)]  
 
 
 ## September 9
