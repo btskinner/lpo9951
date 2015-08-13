@@ -15,13 +15,13 @@ set more off                            // turn off annoying "__more__" feature
 global workdir `c(pwd)'
 global datadir "../data/"
 global auxldir "../aux/"
-global baseurl "http://nces.ed.gov/edat/data/zip/"
+global ghuburl "https://raw.githubusercontent.com/btskinner/lpo9951/master/aux/"
 
 // display globals
 di "$workdir"
 di "$datadir"
 di "$auxldir"
-di "$baseurl"
+di "$ghuburl"
 
 // Educational Longitudinal Study (ELS)
 
@@ -29,9 +29,6 @@ di "$baseurl"
 global els_zip "ELS_2002-12_PETS_v1_0_Student_Stata_Datasets.zip"
 global els_dta "els_02_12_byf3pststu_v1_0.dta"
 global elssave "els_reduced.dta"
-
-// download zipped ELS data file into data directory
-copy $baseurl$els_zip $datadir$els_zip, replace
 
 // unzip ELS file
 cd $datadir
@@ -81,16 +78,16 @@ global ecl_dat "ECLSK_98_99_K8_CHILD_v1_0.dat"
 global ecl_dct "nces_datasets_ecls.dct"
 global eclsave "eclsk_reduced.dta"
     
-// download zipped ECLS data file into data directory
-copy $baseurl$ecl_zip $datadir$ecl_zip, replace
-
 // unzip ECLS file
 cd $datadir
 unzipfile $datadir$ecl_zip, replace
 cd $workdir
 
+// download dictionary file that we will need
+copy $ghuburl$ecl_dct $auxldir$ecl_dct, replace
+
 // read in ECLS file
-infile using $datadir$ecl_dct, using($auxldir$ecl_dat) clear
+infile using $auxldir$ecl_dct, using($datadir$ecl_dat) clear
 
 // lower all variable names using wildcard
 renvars *, lower
@@ -104,9 +101,6 @@ save $datadir$eclsave, replace
 global hsls_zip "HSLS_2009_v2_0_Stata_Datasets.zip"
 global hsls_dta "hsls_09_student_v2_0"
 global hslssave "hsls_reduced.dta"
-
-// download zipped HSLS data file into data directory
-copy $baseurl$hsls_zip $datadir$hsls_zip, replace
 
 // unzip HSLS file
 cd $datadir
@@ -140,13 +134,9 @@ save $datadir$hslssave, replace
 // Programme for International Student Assessment (PISA)
 
 // set globals for PISA files (note new baseurl)
-global pbaseurl "http://pisa2012.acer.edu.au/downloads/"
 global pisa_zip "INT_COG12_DEC03.zip"
 global pisa_txt "INT_COG12_DEC03.txt"
 global pisasave "pisa_reduced.dta"
-
-// download zipped PISA data file into data directory
-copy $pbaseurl$pisa_zip $datadir$pisa_zip, replace
 
 // unzip PISA file
 cd $datadir

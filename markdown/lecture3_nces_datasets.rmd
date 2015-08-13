@@ -16,12 +16,12 @@ opts_chunk$set(echo = FALSE, message = FALSE, comment = NA, cache = FALSE)
 
 ```{r, engine = 'bash'}
 ## run accompanying .do file to get log file for parsing
-stata -b -q do ../do/lecture2_nces_datasets.do	 
+stata -b -q do ../do/lecture3_nces_datasets.do	 
 ```
 
 ```{r}
 ## save log file in object
-lf <- 'lecture2_nces_datasets.log'
+lf <- 'lecture3_nces_datasets.log'
 ```
 
 <br>
@@ -60,7 +60,7 @@ gather all of available data on your computer with a few lines of
 code, avoiding the point-and-click aspects of EDAT altogether and
 increasing the reproducibility of your project.
 
-## Directory structure and global variables
+## Directory structure
 
 First things first, let's talk about directory structure. As you may
 have noticed in the files we've used in the past couple lectures, data
@@ -71,10 +71,39 @@ becomes very difficult to find what you need and almost impossible to
 share your work with others. An organized directory structure is for
 you. Get into the habit now, and you'll be thankful later.
 
-One way to facilitate this organization when downloading data is to
-set up global variables (sometimes called macros) that stand in place
-of your directory path. See the top part of the do file for an
-example:
+At the very least, your directory structure should have the following
+subdirectories:
+
+```
+.
+|-- /aux
+|   |
+|   |-- <auxiliary files>
+|
+|-- /data
+|   |
+|   |-- <data files>
+|
+|-- /do
+|   |
+|   |-- <Stata do files>
+```
+
+By having your main folder structured in this way, you can make use of
+relative links between your files, e.g., `"../data/"`. Even if you
+move the main directory somewhere else on your computer, your files
+will still work as long as the internal structure stays the same.
+
+## Global variables (macros)
+
+Now that your project/course directory is structured this way, it is
+very easy to find files across subdirectories. But rather than retype
+something like `../data/` in front of every data file name, it is
+useful to store the relative link name in a type of variable that we can then
+call as we want. One type of variable that Stata allows us to use for
+this procedure (among others) is called a global variable or
+macro. See the top part of the do file for an example of how to store
+a relative path in a global variable:
 
 ```{r}
 start <- 'set globals for entire file'
@@ -93,46 +122,33 @@ end <- 'Educational'
 writeLines(logparse(lf, start = start, end = end))
 ```
 
-#### NOTE: Most calls of the Stata global macro do not require quotation marks.That is a quirk of Stata's `display` command. 
+#### NOTE: Most calls of the Stata global macro do not require quotation marks. That is a quirk of Stata's `display` command. 
 
 <br>
 
 ## Educational Longitudinal Study, 2002 (ELS)
 
-### Download data
+### Unzip data
 
-First, let's download the entirety of the ELS file. While this may
+Prior to running this file, we will have to have downloaded the
+entirety of the ELS student file. While this may
 seem like overkill, note that even if you use EDAT and subset the
 variables you actually want, you will end up downloading all of ELS
 anyway (just the way it works). First, let's set new globals:
 
 ```{r}
 start <- 'set globals for ELS files'
-end <- 'download zipped ELS data file into data directory'
-writeLines(logparse(lf, start = start, end = end))
-```
-
-Next, download the file to the data folder using the `copy` command,
-which takes the form `copy <from> <to>`. Notice how we use the globals
-to set the `<from>` and `<to>`, which saves us from having to retype
-the local directory structure and has the added benefit of naming the
-locations in such a way to make their meanings clear. Note that the
-file is large so it may take a few minutes
-
-```{r}
-start <- 'download zipped ELS data file into data directory'
 end <- 'unzip ELS file'
 writeLines(logparse(lf, start = start, end = end))
 ```
 
-### Unzip data
-
-Now, that the file is downloaded, we need to unzip it with
-`unzipfile`. Stata will only unzip a file into the current directory,
-so in order to have it go into our data directory like we want, we
-need to use the `cd` command to change directory into our data
-directory and return to the working directory after we've unzipped the
-file. This is why we saved the `workdir` at the top of the file.
+As you probably noticed, the downloaded ELS file is zipped. This means
+that we need to unzip it with `unzipfile`. Stata will only unzip a
+file into the current directory, so in order to have it go into our
+data directory like we want, we need to use the `cd` command to change
+directory into our data directory and return to the working directory
+after we've unzipped the file. This is why we saved the `workdir` at
+the top of the file. 
 
 ```{r}
 start <- 'unzip ELS file'
@@ -142,17 +158,28 @@ writeLines(logparse(lf, start = start, end = end))
 
 ### Subset data
 
-ELS data files are very large, so they cannot be opened up all at
-once. For any given project, you don't want or need all of the
-variables anyway. To subset the full dataset to only those variables
-we want requires the `use using` setup, as follows (note how we
-temporariliy change the delimiter to make our lives a little easier):
+ELS data files are very large, so they take up a ton of memory if you
+try to load them in their entirety. For any given project, you don't
+want or need all of the variables anyway. To subset the full dataset
+to only those variables we want requires the `use using` setup, as
+follows (note how we temporariliy change the delimiter to make our
+lives a little easier):
 
 ```{r}
 start <- 'change delimiter to a semi-colon -1-'
 end <- 'Early Childhood'
 writeLines(logparse(lf, start = start, end = end))
 ```
+
+Because nobody (nobody) likes variables with capital letters---except
+in very specific sitations---we use the `renvars` command to set all
+the variable names to lowercase. Once that is finished, we save the
+new working dataset with `save` command. By prepending the name of the
+saved dataset with the relative link to the data folder (via the
+global), the save dataset goes into the correct subdirectory. The
+option after the comma, `replace`, simply tells Stata to overwrite any
+files with same name.
+
 
 #### QUICK EXERCISE
 > Using EDAT, generate an ELS dataset that includes student demographics
@@ -162,22 +189,54 @@ writeLines(logparse(lf, start = start, end = end))
 
 ## Early Childhood Longitudinal Study - Kindergarten 98-99 (ECLS-K)
 
-### Download and unzip data
+### Unzip data
 
-Downloading and unzipping ECLS-K follows the same method that we used
-for ELS. It's *really* big, so you really only want to download it once.
+Unzipping ECLS-K follows the same method that we used for ELS. Note
+that the unzipped files is *really* big, so sure you have enough room
+for it (no 2 GB thumbdrives!). 
 
 ```{r}
 start <- 'Early Childhood Longitudinal Study - Kindergarten'
-end <- 'read in ECLS file'
+end <- 'download dictionary file that we will need'
 writeLines(logparse(lf, start = start, end = end))
 ```
 
 ### Subset data
 
 Also like the ELS files, the ECLS-K data files are too large to load
-all at once. Furthermore, they require a separate dictionary file to
-properly read in the data:
+all at once. Unlike ELS, however, they require a separate dictionary file to
+properly read in the data. When downloading from EDAT, you will also
+get a `.dct` file that you will use to properly parse the `.dat`
+format of ECLS-K. It will look something like this:
+
+```
+dictionary {
+
+_column(1)     str8 CHILDID   %8s       "CHILD IDENTIFICATION NUMBER"
+_column(1418)  double C3R4RSCL%6.2f     "C3 RC4 READING IRT SCALE SCORE"
+_column(1510)  double C3R4MSCL%6.2f     "C3 RC4 MATH IRT SCALE SCORE"
+
+}
+```
+
+I've already created this file and hosted it in the course
+repository. Since it is a small file, we can use the `copy` command,
+which takes the format `copy <from> <to>` and can handle URL paths, to
+download the file to the auxiliary directory. Note again the use of
+global macros:
+
+```{r}
+start <- 'download dictionary file that we will need'
+end <- 'read in ECLS file'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+To read the ECLS-K `.dat` file, we use the `infile` command. Note the
+weird double `using` subcommands. The first tells Stata which
+dictionary file to use; the second, after the comma, tells which
+dataset to use. There are a couple of other ways to use this command,
+but this is the most transparent. As before, we lower variable names
+and save the working dataset.
 
 ```{r}
 start <- 'read in ECLS file'
@@ -193,9 +252,9 @@ writeLines(logparse(lf, start = start, end = end))
 
 ## High School Longitudinal Study, 2009 (HSLS)
 
-### Download, unzip, and subset data
+### Unzip and subset data
 
-The process for downloading, unzipping, and subsetting data from HSLS
+The process for unzipping and subsetting data from HSLS
 is the same as for ELS. In interest of completeness, the code is
 reproduced in full below:
 
@@ -208,13 +267,12 @@ writeLines(logparse(lf, start = start, end = end))
 
 ## Programme for International Student Assessment (PISA)
 
-### Download and unzip data
+### Unzip data
 
 Not all datasets, of course, come from the NCES. One major dataset,
 PISA, is conducted and hosted by the Organization for Economic
 Co-operation and Development or OECD. To get these data, we'll once
-again use the same process for downloading and unzipping files. Note
-that the global `baseurl` has changed:
+again use the same process for unzipping files. 
 
 ```{r}
 start <- 'Programme for International Student Assessment'
@@ -224,8 +282,8 @@ writeLines(logparse(lf, start = start, end = end))
 
 ### Subset data
 
-PISA uses a fixed-width format for storing data that is common, but
-not as user friendly. The first 3 lines of text look like this (they
+PISA uses a fixed-width format for storing data that is common but
+not particularly user friendly. The first 3 lines of text look like this (they
 are long so they wrap in this view):
 
 ```
@@ -238,14 +296,14 @@ To read the data into Stata, we have to use the `infix` command, which
 requires that we know the column of each variable that we need. It
 also helps if we know the data format (e.g., string vs. integer
 vs. float,
-etc.). [Having a codebook like this is absolutely necessary](http://pisa2012.acer.edu.au/downloads/M_stu_codebook.pdf). Knowing
-what is needed, we can finally read in the data and save a reduced
-dataset. Because the string is long, I've stored the entire thing in a
-local using the comand `local <name> ...`. Locals work just like
-globals except they only last for as long as the script is running. To
-call a local, surround the local name by left and right ticks. Note,
-that a left tick is different from a right tick. On most keyboards,
-the left tick is above the tab key on the lefthand side of the keyboard.
+etc.). [Having a codebook like this is absolutely necessary](http://pisa2012.acer.edu.au/downloads/M_stu_codebook.pdf).
+Knowing what is needed, we can finally read in the data and save a
+reduced dataset. Because the string is long, I've stored the entire
+thing in a local variable using the comand `local <name> ...`. Locals work just
+like globals except they only last for as long as the script is
+running. To call a local, surround the local name by left and right
+ticks. Note, that a left tick is different from a right tick. On most
+keyboards, the left tick is above the tab key on the lefthand side of the keyboard.
 
 ```{r}
 start <- 'store variables'
