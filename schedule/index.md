@@ -2,11 +2,7 @@
 layout: default
 ---
 
-# Lectures
-
-Class lectures (which will be interactive) will be held on Wednesdays from 9:10a - noon in Wyatt 130.
-
-# Schedule of Meetings
+# Schedule of Meetings & Assignments
 
 The schedule for all class meetings is as follows. Assignments are given in the week they are assigned, meaning that they are due the following week per the syllabus. Additional assignments related to the final project are also listed as they occur.
 
