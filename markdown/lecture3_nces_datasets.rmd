@@ -34,6 +34,8 @@ available data (which themselves are only a fraction of all
 potentially available data), they are some of the most widely used in
 education research.
 
+<br>
+
 ## EDAT
 
 NCES has created a very useful data tool called EDAT, which I assume
@@ -60,19 +62,22 @@ gather all of available data on your computer with a few lines of
 code, avoiding the point-and-click aspects of EDAT altogether and
 increasing the reproducibility of your project.
 
+<br>
+
 ## Directory structure
 
-First things first, let's talk about directory structure. As you may
-have noticed in the files we've used in the past couple lectures, data
-files and Stata do files have been stored in their own subdirectories
-(folders), While it's possible to simply dump everything in one big
-directory, you may find that over time, as the folder grows, it
+First things first, let's add to our directory structure. As you
+remember from the first lecture, data
+files and Stata do files have been stored in their own
+subdirectories. While it's possible to simply dump everything in one
+big directory, you may find that over time, as the folder grows, it
 becomes very difficult to find what you need and almost impossible to
-share your work with others. An organized directory structure is for
-you. Get into the habit now, and you'll be thankful later.
+share your work with others. Yes, your computer can search really
+well. An organized directory structure is for you, the human. Get into
+the habit now, and you'll be thankful later. 
 
-At the very least, your directory structure should have the following
-subdirectories:
+Today we're adding an `./aux` subdirectory. Your directory structure
+should now look like this: 
 
 ```
 .
@@ -89,10 +94,7 @@ subdirectories:
 |   |-- <Stata do files>
 ```
 
-By having your main folder structured in this way, you can make use of
-relative links between your files, e.g., `"../data/"`. Even if you
-move the main directory somewhere else on your computer, your files
-will still work as long as the internal structure stays the same.
+<br>
 
 ## Global variables (macros)
 
@@ -128,6 +130,8 @@ writeLines(logparse(lf, start = start, end = end))
 
 ## Educational Longitudinal Study, 2002 (ELS)
 
+<br>
+
 ### Unzip data
 
 Prior to running this file, we will have to have downloaded the
@@ -156,6 +160,8 @@ end <- 'change delimiter to a semi-colon -1-'
 writeLines(logparse(lf, start = start, end = end))
 ```
 
+<br>
+
 ### Subset data
 
 ELS data files are very large, so they take up a ton of memory if you
@@ -180,6 +186,7 @@ global), the save dataset goes into the correct subdirectory. The
 option after the comma, `replace`, simply tells Stata to overwrite any
 files with same name.
 
+<br>
 
 #### QUICK EXERCISE
 > Using EDAT, generate an ELS dataset that includes student demographics
@@ -188,6 +195,8 @@ files with same name.
 <br>
 
 ## Early Childhood Longitudinal Study - Kindergarten 98-99 (ECLS-K)
+
+<br>
 
 ### Unzip data
 
@@ -200,6 +209,7 @@ start <- 'Early Childhood Longitudinal Study - Kindergarten'
 end <- 'download dictionary file that we will need'
 writeLines(logparse(lf, start = start, end = end))
 ```
+<br>
 
 ### Subset data
 
@@ -243,6 +253,7 @@ start <- 'read in ECLS file'
 end <- 'High School Longitudinal Study'
 writeLines(logparse(lf, start = start, end = end))
 ```
+<br>
 
 #### QUICK EXERCISE
 > Using EDAT, generate an ECLS-K dataset that includes student
@@ -251,6 +262,8 @@ writeLines(logparse(lf, start = start, end = end))
 <br>
 
 ## High School Longitudinal Study, 2009 (HSLS)
+
+<br>
 
 ### Unzip and subset data
 
@@ -267,6 +280,8 @@ writeLines(logparse(lf, start = start, end = end))
 
 ## Programme for International Student Assessment (PISA)
 
+<br>
+
 ### Unzip data
 
 Not all datasets, of course, come from the NCES. One major dataset,
@@ -279,6 +294,7 @@ start <- 'Programme for International Student Assessment'
 end <- 'store variables'
 writeLines(logparse(lf, start = start, end = end))
 ```
+<br>
 
 ### Subset data
 
@@ -310,6 +326,7 @@ start <- 'store variables'
 end <- 'end file'      
 writeLines(logparse(lf, start = start, end = end))
 ```
+<br>
 
 #### QUICK EXERCISE
 > Following the link above, figure out the column for the variable

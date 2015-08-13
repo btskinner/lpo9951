@@ -95,6 +95,33 @@ writeLines(logparse(lf, start = start, end = end))
 
 <br>
 
+## Directory structure
+
+We'll talk about directory structure more detail later, but for now,
+make sure that your course files have at least the following structure:
+
+```
+.
+|-- /data
+|   |
+|   |-- <data files>
+|
+|-- /do
+|   |
+|   |-- <Stata do files>
+```
+
+Place your Stata do files in the `./do` subdirectory and all data
+files in the `./data` folder. We'll add more as the semester goes on
+but these will do for now. The primary directory (represented by the
+`.`) can be anywhere on your computer or a thumbdrive. What really
+matters are the relative paths between the subfolders. Just make sure
+that wherever you choose to hold your course files you have enough
+storage space. While do files are usually very small, some of our
+datasets will be fairly large.
+
+<br>
+
 ## Loading Stata data files
 
 All Stata data files are saved in the `*.dta` format. Today we'll be

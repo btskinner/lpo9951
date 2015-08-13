@@ -93,6 +93,7 @@ img {
 <div id="purpose" class="section level4">
 <h4>PURPOSE</h4>
 <p>Today we will work on downloading data files from the NCES and OECD databases. While these data files represent only a fraction of publicly available data (which themselves are only a fraction of all potentially available data), they are some of the most widely used in education research.</p>
+<p><br></p>
 </div>
 <div id="edat" class="section level2">
 <h2>EDAT</h2>
@@ -105,11 +106,12 @@ img {
 </ul>
 <p>This process, like all other work, should be tracked carefully. Some simple steps at the beginning can save you lots of time at the end.</p>
 <p>I will also show you how to download the full datasets for each survey today. While EDAT may entirely serve your data-gathering needs (at least for these surveys), you may in the future easier to simply gather all of available data on your computer with a few lines of code, avoiding the point-and-click aspects of EDAT altogether and increasing the reproducibility of your project.</p>
+<p><br></p>
 </div>
 <div id="directory-structure" class="section level2">
 <h2>Directory structure</h2>
-<p>First things first, let’s talk about directory structure. As you may have noticed in the files we’ve used in the past couple lectures, data files and Stata do files have been stored in their own subdirectories (folders), While it’s possible to simply dump everything in one big directory, you may find that over time, as the folder grows, it becomes very difficult to find what you need and almost impossible to share your work with others. An organized directory structure is for you. Get into the habit now, and you’ll be thankful later.</p>
-<p>At the very least, your directory structure should have the following subdirectories:</p>
+<p>First things first, let’s add to our directory structure. As you remember from the first lecture, data files and Stata do files have been stored in their own subdirectories. While it’s possible to simply dump everything in one big directory, you may find that over time, as the folder grows, it becomes very difficult to find what you need and almost impossible to share your work with others. Yes, your computer can search really well. An organized directory structure is for you, the human. Get into the habit now, and you’ll be thankful later.</p>
+<p>Today we’re adding an <code>./aux</code> subdirectory. Your directory structure should now look like this:</p>
 <pre><code>.
 |-- /aux
 |   |
@@ -122,7 +124,7 @@ img {
 |-- /do
 |   |
 |   |-- &lt;Stata do files&gt;</code></pre>
-<p>By having your main folder structured in this way, you can make use of relative links between your files, e.g., <code>&quot;../data/&quot;</code>. Even if you move the main directory somewhere else on your computer, your files will still work as long as the internal structure stays the same.</p>
+<p><br></p>
 </div>
 <div id="global-variables-macros" class="section level2">
 <h2>Global variables (macros)</h2>
@@ -154,6 +156,7 @@ https://raw.githubusercontent.com/btskinner/lpo9951/master/aux/</code></pre>
 </div>
 <div id="educational-longitudinal-study-2002-els" class="section level2">
 <h2>Educational Longitudinal Study, 2002 (ELS)</h2>
+<p><br></p>
 <div id="unzip-data" class="section level3">
 <h3>Unzip data</h3>
 <p>Prior to running this file, we will have to have downloaded the entirety of the ELS student file. While this may seem like overkill, note that even if you use EDAT and subset the variables you actually want, you will end up downloading all of ELS anyway (just the way it works). First, let’s set new globals:</p>
@@ -173,6 +176,7 @@ successfully unzipped ../data/ELS_2002-12_PETS_v1_0_Student_Stata_Datasets.zip
 
 . cd $workdir
 /Users/benski/Github/lpo9951/markdown</code></pre>
+<p><br></p>
 </div>
 <div id="subset-data" class="section level3">
 <h3>Subset data</h3>
@@ -212,6 +216,7 @@ delimiter now cr
 . save $datadir$elssave, replace
 file ../data/els_reduced.dta saved</code></pre>
 <p>Because nobody (nobody) likes variables with capital letters—except in very specific sitations—we use the <code>renvars</code> command to set all the variable names to lowercase. Once that is finished, we save the new working dataset with <code>save</code> command. By prepending the name of the saved dataset with the relative link to the data folder (via the global), the save dataset goes into the correct subdirectory. The option after the comma, <code>replace</code>, simply tells Stata to overwrite any files with same name.</p>
+<p><br></p>
 <div id="quick-exercise" class="section level4">
 <h4>QUICK EXERCISE</h4>
 <blockquote>
@@ -223,6 +228,7 @@ file ../data/els_reduced.dta saved</code></pre>
 </div>
 <div id="early-childhood-longitudinal-study---kindergarten-98-99-ecls-k" class="section level2">
 <h2>Early Childhood Longitudinal Study - Kindergarten 98-99 (ECLS-K)</h2>
+<p><br></p>
 <div id="unzip-data-1" class="section level3">
 <h3>Unzip data</h3>
 <p>Unzipping ECLS-K follows the same method that we used for ELS. Note that the unzipped files is <em>really</em> big, so sure you have enough room for it (no 2 GB thumbdrives!).</p>
@@ -249,6 +255,7 @@ successfully unzipped ../data/ECLSK_1998-99_v1_0_Stata_Datasets.zip to current
 
 . cd $workdir
 /Users/benski/Github/lpo9951/markdown</code></pre>
+<p><br></p>
 </div>
 <div id="subset-data-1" class="section level3">
 <h3>Subset data</h3>
@@ -281,6 +288,7 @@ _column(1510)  double C3R4MSCL%6.2f     &quot;C3 RC4 MATH IRT SCALE SCORE&quot;
 . // save reduced ECLS-K dataset
 . save $datadir$eclsave, replace
 file ../data/eclsk_reduced.dta saved</code></pre>
+<p><br></p>
 <div id="quick-exercise-1" class="section level4">
 <h4>QUICK EXERCISE</h4>
 <blockquote>
@@ -292,6 +300,7 @@ file ../data/eclsk_reduced.dta saved</code></pre>
 </div>
 <div id="high-school-longitudinal-study-2009-hsls" class="section level2">
 <h2>High School Longitudinal Study, 2009 (HSLS)</h2>
+<p><br></p>
 <div id="unzip-and-subset-data" class="section level3">
 <h3>Unzip and subset data</h3>
 <p>The process for unzipping and subsetting data from HSLS is the same as for ELS. In interest of completeness, the code is reproduced in full below:</p>
@@ -345,6 +354,7 @@ file ../data/hsls_reduced.dta saved</code></pre>
 </div>
 <div id="programme-for-international-student-assessment-pisa" class="section level2">
 <h2>Programme for International Student Assessment (PISA)</h2>
+<p><br></p>
 <div id="unzip-data-2" class="section level3">
 <h3>Unzip data</h3>
 <p>Not all datasets, of course, come from the NCES. One major dataset, PISA, is conducted and hosted by the Organization for Economic Co-operation and Development or OECD. To get these data, we’ll once again use the same process for unzipping files.</p>
@@ -365,6 +375,7 @@ successfully unzipped ../data/INT_COG12_DEC03.zip to current directory
 
 . cd $workdir
 /Users/benski/Github/lpo9951/markdown</code></pre>
+<p><br></p>
 </div>
 <div id="subset-data-2" class="section level3">
 <h3>Subset data</h3>
@@ -382,6 +393,7 @@ ALB0080000ALB00060000800000000100003 3977777777717771774771047077737777370191977
 . // save reduced PISA dataset
 . save $datadir$pisasave, replace
 file ../data/pisa_reduced.dta saved</code></pre>
+<p><br></p>
 <div id="quick-exercise-2" class="section level4">
 <h4>QUICK EXERCISE</h4>
 <blockquote>
