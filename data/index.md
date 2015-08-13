@@ -9,4 +9,4 @@ layout: default
 
 # Auxiliary files
 
-[nces\_datasets\_ecls.dct](https://raw.githubusercontent.com/btskinner/lpo9951/master/data/nces_datasets_ecls.dct)
+[nces\_datasets\_ecls.dct](hhttps://raw.githubusercontent.com/btskinner/lpo9951/master/aux/nces_datasets_ecls.dct)
