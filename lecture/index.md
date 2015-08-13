@@ -8,136 +8,87 @@ Class lectures (which will be interactive) will be held on Wednesdays from 9:10a
 
 # Schedule of Meetings
 
-The schedule for all class meetings is as follows:
+The schedule for all class meetings is as follows. Assignments are given in the week they are assigned, meaning that they are due the following week per the syllabus. Additional assignments related to the final project are also listed as they occur.
 
 ## August 26
 
-#### TOPICS
+**LECTURE 1:** [Class introduction](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture1_introduction.html)
 
-[Class introduction](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture1_introduction.html)
-
-#### ASSIGNMENTS
-
-Assignment 1 due September 1, midnight
+**ASSIGNMENT 1:**
 
 
 ## September 2
 
-#### TOPICS
+**LECTURE 2:** [Stata basics](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture2_stata_basics.html)
 
-[Stata basics](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture2_stata_basics.html)
-
-#### ASSIGNMENTS
-
-Assignment 2 due September 8, midnight
+**ASSIGNMENT 2:**
 
 
 ## September 9
 
-#### TOPICS
+**LECTURE 3:** Working with NCES databases
 
-Working with NCES databases
-
-#### ASSIGNMENTS
-
-Assignment 3 due September 15, midnight
-
+**ASSIGNMENT 3:**
 
 ## September 16
 
-#### TOPICS
+**LECTURE 4:** Dataset manipulation: Collapsing, merging, bending the data to your will
 
-Dataset manipulation: Collapsing, merging, bending the data to your will
-
-#### ASSIGNMENTS
-
-Assignment 4 due September 22, midnight; summary research area due
+**ASSIGNMENT 4:**  
+**ADDITIONAL:** Summary research area
 
 
 ## September 23
 
-#### TOPICS
+**LECTURE 5:** More dataset manipulation: One to many merging, many to one merging, appending datasets
 
-More dataset manipulation: One to many merging, many to one merging,
-appending datasets
-
-#### ASSIGNMENTS
-
-Assignment 5 due September 29, midnight
-
+**ASSIGNMENT 5:**
 
 ## September 30
 
-#### TOPICS
+**LECTURE 6:** Introduction to programming and helpful functions
 
-Introduction to programming and helpful functions
-
-#### ASSIGNMENTS
-
-Assignment 6 due October 6, midnight
-
+**ASSIGNMENT 6:** 
 
 ## October 7
 
-#### TOPICS
+**LECTURE 7:** Sampling: Simple sampling designs
 
-Sampling: Simple sampling designs
-
-#### ASSIGNMENTS
-
-Assignment 7 due October 13, midnight
+**ASSIGNMENT 7:** 
 
 
 ## October 14
 
-#### TOPICS
+**LECTURE 8:** Sampling: Complex sampling designs
 
-Sampling: Complex sampling designs
+**ASSIGNMENT 8:**  
 
-#### ASSIGNMENTS
-
-Assignment 8 due October 20, midnight; research questions due
+**ADDITIONAL:** Research questions
 
 ## October 21
 
-#### TOPICS
+**LECTURE 9:** Data cleaning
 
-Data cleaning
-
-#### ASSIGNMENTS
-
-Assignment 9 due October 27, midnight
-
+**ASSIGNMENT 9:**
 
 ## October 28
 
-#### TOPICS
+**LECTURE 10:** Data validation
 
-Data validation
-
-#### ASSIGNMENTS
-
-Assignment 10 due November 3, midnight
-
+**ASSIGNMENT 10:** 
 
 ## November 4
 
-#### TOPICS
-
-Descriptive statistics: Tabular and graphical approaches
+**LECTURE 11:** Descriptive statistics: Tabular and graphical approaches
 
 
 ## November 11
 
-#### TOPICS
-
-Further topics in programming Stata
+**LECTURE 12:** Further topics in programming Stata
 
 ## November 18
 
-#### TOPICS
-
-Graphical approaches to describing data
+**LECTURE 13:** Graphical approaches to describing data
 
 
 ## November 25
@@ -147,17 +98,13 @@ Thanksgiving Break - No Class
 
 ## December 2
 
-#### TOPICS
+**LECTURE TBA:** *Based on student work*
 
-Topic TBA: based on student work
-
-#### ASSIGNMENTS
-
-Summary Papers, Do-File and Codebooks due before class, December 9
+**FINAL ASSIGNMENT:** Summary Papers, Do-File, Codebooks
 
 ## December 9
 
-Class Presentations
+**Class Presentations**
 
 
 

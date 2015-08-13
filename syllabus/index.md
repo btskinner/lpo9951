@@ -37,9 +37,8 @@ simplify complex analyses.
 ## Assignments
 
 There will be a total of ten assignments, which will be graded
-pass/fail. Late assignments will not be accepted. These assignments
-will account for half of your grade. Collaboration on assignments is
-fine, however, many of the assignments will ask you to work with
+pass/fail. All assignments, unless otherwise stated, are due by midnight of the evening before the next class. Late assignments will not be accepted. These assignments will account for half of your grade. Collaboration on assignments is
+fine, though many of the assignments will ask you to work with
 variables and datasets of your own choosing.
 
 ### TOTAL: 50%
