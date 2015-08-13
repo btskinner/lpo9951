@@ -86,20 +86,22 @@ may be working with.
 
 Unless given other instructions, all assignment files should be submitted with the following naming convention,
 
-```<yymmdd>_<file name>_<lastname>.*
 ```
-where 
+<yymmdd>_<file name>_<lastname>.*
+```  
+
+where   
 
 * `yymmdd` is the year, month, and day in two-digit format (e.g., *150901*)
 * `file name` describes the file (e.g., *assignment1*)
-* `lastname` is your last name
+* `lastname` is your last name  
 
-For example:
+For example:  
 
 ```
 150901_assignment1_skinner.docx
 150908_assignment2_skinner.do
-```
+```  
 
 For assignments, the year, month and day should be the day the assignment is due.
 
