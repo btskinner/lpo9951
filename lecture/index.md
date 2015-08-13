@@ -25,7 +25,7 @@ Assignment 1 due September 1, midnight
 
 #### TOPICS
 
-Stata basics
+[Stata basics](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture2_stata_basics.html)
 
 #### ASSIGNMENTS
 
