@@ -37,8 +37,9 @@ simplify complex analyses.
 ## Assignments
 
 There will be a total of ten assignments, which will be graded
-pass/fail. All assignments, unless otherwise stated, are due by midnight of the evening before the next class. Late assignments will not be accepted. These assignments will account for half of your grade. Collaboration on assignments is
-fine, though many of the assignments will ask you to work with
+pass/fail. All assignments, unless otherwise stated, are due by midnight of the evening before the next class. 
+Late assignments will not be accepted. These assignments will account for half of your grade. 
+Collaboration on assignments is fine, though many of the assignments will ask you to work with
 variables and datasets of your own choosing.
 
 ### TOTAL: 50%
@@ -56,15 +57,15 @@ graphics. The summary paper and codebook will be due on December
 
 # Texts
 
-The following texts are available in the bookstore or online:
+The following texts are available in the online:
 
-* Baum, C. (2006). *An Introduction to Modern Econometrics Using
-STATA*. College Station: STATA Press
+* Baum, C. (2006). [*An Introduction to Modern Econometrics Using
+STATA*](http://www.amazon.com/Introduction-Modern-Econometrics-Using-Stata/dp/1597180130). College Station: STATA Press
 
-* Long, J.S. (2009). *The Workflow of Data Analysis Using Stata*.
+* Long, J.S. (2009). [*The Workflow of Data Analysis Using Stata*](http://www.amazon.com/Workflow-Data-Analysis-Using-Stata/dp/1597180475).
 College Station: STATA Press
 
-For this semester, both of these books are *optional*. I will
+For this semester, both of these books are *optional*. I may
 recommend a few chapters from both as the semester progresses, but the
 class notes are the only required reading.
 
