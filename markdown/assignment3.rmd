@@ -1,0 +1,39 @@
+---
+title: Assignment 3
+author: LPO 9951 | Fall 2015
+output: 
+  html_document:
+   theme: cosmo
+   css: ./css/custom.css
+---
+
+For this assignment, you will need to have access to the ECLS, ELS,
+HSLS, or PISA data. With the dataset that you plan to use for your
+project, complete the following steps:
+
+1. Using your research question from the first assignment along with
+  my comments, describe briefly 10 variables that you think might be
+  relevant to this study.
+2. Using the dataset that you'd like to work with, find indicators to
+match the variables you're looking for.
+3. Generate code to subset your chosen variables from the full
+dataset.
+4. Describe the data you've selected. Include the following
+   information in your description of each *continuous* indicator:
+     * Mean
+     * Standard error of the mean
+     * Median
+     * Number missing
+
+For *categorical* indicators, I need a tabulation across the
+levels of the indicator, including a category for missing data.
+
+*NB: Skip weights, etc, and focus on your variables of interest.*
+
+For this assignment, you should submit a do file that
+
+1. subsets the variables you want from the full dataset (saving optional)
+2. generates the proper descriptive statistics
+
+
+<br>
