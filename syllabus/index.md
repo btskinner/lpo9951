@@ -55,9 +55,7 @@ graphics. The summary paper and codebook will be due on December
 
 ### TOTAL: 50%
 
-# Texts
-
-The following texts are available in the online:
+# Recommended Texts
 
 * Baum, C. (2006). [*An Introduction to Modern Econometrics Using
 STATA*](http://www.amazon.com/Introduction-Modern-Econometrics-Using-Stata/dp/1597180130). College Station: STATA Press
