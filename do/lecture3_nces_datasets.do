@@ -14,11 +14,13 @@ set more off                            // turn off annoying "__more__" feature
 // set globals for entire file
 global workdir `c(pwd)'
 global datadir "../data/"
+global auxldir "../aux/"
 global baseurl "http://nces.ed.gov/edat/data/zip/"
 
 // display globals
 di "$workdir"
 di "$datadir"
+di "$auxldir"
 di "$baseurl"
 
 // Educational Longitudinal Study (ELS)
@@ -88,7 +90,7 @@ unzipfile $datadir$ecl_zip, replace
 cd $workdir
 
 // read in ECLS file
-infile using $datadir$ecl_dct, using($datadir$ecl_dat) clear
+infile using $datadir$ecl_dct, using($auxldir$ecl_dat) clear
 
 // lower all variable names using wildcard
 renvars *, lower
