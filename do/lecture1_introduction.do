@@ -2,7 +2,7 @@ capture log close                       // closes any logs, should they be open
 log using "lecture1_introduction.log", replace    // open new log
 
 // NAME: Introduction
-// FILE: lecture0_introduction.do
+// FILE: lecture1_introduction.do
 // AUTH: Will Doyle
 // REVS: Benjamin Skinner
 // INIT: 20 August 2014

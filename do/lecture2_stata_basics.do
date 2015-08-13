@@ -1,8 +1,8 @@
 capture log close                       // closes any logs, should they be open
-log using "lecture1_stata_basics.log", replace    // open new log
+log using "lecture2_stata_basics.log", replace    // open new log
 
 // NAME: Stata Basics
-// FILE: lecture1_stata_basic.do
+// FILE: lecture2_stata_basic.do
 // AUTH: Will Doyle
 // REVS: Benjamin Skinner
 // INIT: 4 September 2012

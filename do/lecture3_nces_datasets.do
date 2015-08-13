@@ -1,8 +1,8 @@
 capture log close                       // closes any logs, should they be open
-log using "lecture2_nces_datasets.log", replace    // open new log
+log using "lecture3_nces_datasets.log", replace    // open new log
 
 // NAME: Working with NCES datasets
-// FILE: lecture2_nces_datasets.do
+// FILE: lecture3_nces_datasets.do
 // AUTH: Will Doyle
 // REVS: Benjamin Skinner
 // INIT: 3 September 2014

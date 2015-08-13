@@ -16,12 +16,12 @@ opts_chunk$set(echo = FALSE, message = FALSE, comment = NA)
 
 ```{r, engine = 'bash'}
 ## run accompanying .do file to get log file for parsing
-stata -b -q do ../do/lecture1_stata_basics.do	 
+stata -b -q do ../do/lecture2_stata_basics.do	 
 ```
 
 ```{r}
 ## save log file in object
-lf <- 'lecture1_stata_basics.log'
+lf <- 'lecture2_stata_basics.log'
 ```
 
 <br>
