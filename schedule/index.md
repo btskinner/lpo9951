@@ -28,7 +28,7 @@ ASSIGNMENT 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 **Working with NCES Datasets**
 
-LECTURE 3: [[Web](https://rawgit.com/btskinner/lpo9951/master/lecture/lecture3_nces_datasets.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture3_nces_datasets.pdf)]  
+LECTURE 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture3_nces_datasets.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture3_nces_datasets.pdf)]  
 
 ASSIGNMENT 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment3.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment3.pdf)]
 
