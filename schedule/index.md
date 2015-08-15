@@ -34,7 +34,7 @@ ASSIGNMENT 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 ## September 16
 
-**Dataset Manipulation: Collapsing, merging, bending the data to your will**
+**Dataset Manipulation: Subsetting, appending, collapsing, and merging**
 
 LECTURE 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture4_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture4_dataset_manipulation.pdf)]  
 
@@ -45,7 +45,7 @@ ADDITIONAL: Summary research area
 
 ## September 23
 
-**More Dataset Manipulation: One to many merging, many to one merging, appending datasets**
+**More Dataset Manipulation: One to many merging and many to one merging**
 
 LECTURE 5: 
 
