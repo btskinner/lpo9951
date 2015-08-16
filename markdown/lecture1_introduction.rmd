@@ -109,10 +109,15 @@ make sure that your course files have at least the following structure:
 |-- /do
 |   |
 |   |-- <Stata do files>
+|
+|-- /plots
+|   |
+|   |-- <plot files>
 ```
 
-Place your Stata do files in the `./do` subdirectory and all data
-files in the `./data` folder. We'll add more as the semester goes on
+Place your Stata do files in the `./do` subdirectory, all data
+files in the `./data` folder, and all saved graphics in the
+`./plots`. We'll add more as the semester goes on 
 but these will do for now. The primary directory (represented by the
 `.`) can be anywhere on your computer or a thumbdrive. What really
 matters are the relative paths between the subfolders. Just make sure

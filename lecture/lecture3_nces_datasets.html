@@ -123,7 +123,11 @@ img {
 |
 |-- /do
 |   |
-|   |-- &lt;Stata do files&gt;</code></pre>
+|   |-- &lt;Stata do files&gt;
+|
+|-- /plots
+|   |
+|   |-- &lt;plot files&gt;</code></pre>
 <p><br></p>
 </div>
 <div id="global-variables-macros" class="section level2">
@@ -214,6 +218,7 @@ delimiter now cr
 
 . // save reduced ELS dataset
 . save $datadir$elssave, replace
+(note: file ../data/els_reduced.dta not found)
 file ../data/els_reduced.dta saved</code></pre>
 <p>Because nobody (nobody) likes variables with capital letters—except in very specific sitations—we use the <code>renvars</code> command to set all the variable names to lowercase. Once that is finished, we save the new working dataset with <code>save</code> command. By prepending the name of the saved dataset with the relative link to the data folder (via the global), the save dataset goes into the correct subdirectory. The option after the comma, <code>replace</code>, simply tells Stata to overwrite any files with same name.</p>
 <p><br></p>
@@ -287,6 +292,7 @@ _column(1510)  double C3R4MSCL%6.2f     &quot;C3 RC4 MATH IRT SCALE SCORE&quot;
 
 . // save reduced ECLS-K dataset
 . save $datadir$eclsave, replace
+(note: file ../data/eclsk_reduced.dta not found)
 file ../data/eclsk_reduced.dta saved</code></pre>
 <p><br></p>
 <div id="quick-exercise-1" class="section level4">
@@ -348,6 +354,7 @@ no renames necessary
 
 . // save reduced HSLS dataset
 . save $datadir$hslssave, replace
+(note: file ../data/hsls_reduced.dta not found)
 file ../data/hsls_reduced.dta saved</code></pre>
 <p><br></p>
 </div>
@@ -392,6 +399,7 @@ ALB0080000ALB00060000800000000100003 3977777777717771774771047077737777370191977
 
 . // save reduced PISA dataset
 . save $datadir$pisasave, replace
+(note: file ../data/pisa_reduced.dta not found)
 file ../data/pisa_reduced.dta saved</code></pre>
 <p><br></p>
 <div id="quick-exercise-2" class="section level4">
@@ -400,7 +408,7 @@ file ../data/pisa_reduced.dta saved</code></pre>
 <p>Following the link above, figure out the column for the variable about the number of computers in the household, add it to the list, and read in the new expanded data.</p>
 </blockquote>
 <p><br> <br></p>
-<p><em>Init: 03 August 2015; Updated: 13 August 2015</em></p>
+<p><em>Init: 03 August 2015; Updated: 16 August 2015</em></p>
 <p><br></p>
 </div>
 </div>

@@ -92,6 +92,10 @@ should now look like this:
 |-- /do
 |   |
 |   |-- <Stata do files>
+|
+|-- /plots
+|   |
+|   |-- <plot files>
 ```
 
 <br>
