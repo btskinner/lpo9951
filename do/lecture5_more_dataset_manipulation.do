@@ -62,9 +62,9 @@ sort cnum
 // merge many-to-one
 merge m:1 cnum using ${datadir}county_data
 
-// inspect merge
+// inspect many-to-one merge
 tab _merge
-list cnum api99 county_inc if _n<10
+list cnum api99 county_inc if _n < 10
 
 // plot and save
 onewayplot api99, by(county_inc) stack ms(oh) msize(*.1) width(1) name(api99_ow)
@@ -89,7 +89,7 @@ sort dnum
 // merge one-to-many
 merge 1:m dnum using ${datadir}api
 
-// inspect merge
+// inspect one-to-many merge
 tab _merge
 list dnum api99 edd if _n < 10
 
@@ -107,22 +107,22 @@ drop api99
 sample 90
 save ${datadir}api_00, replace
 
-// merge
+// merge datasets
 merge snum using ${datadir}api_99, sort
 
-// inspect merge
+// inspect messy merge
 tab _merge
 
 // code for looking at missing values, other patterns
 
-// inspect command
+// command: inspect
 inspect api99
 inspect api00
 
-// mdesc
+// command: mdesc
 mdesc api99 api00 
 
-// mvpatterns
+// command: mvpatterns
 mvpatterns api99 api00 ell mobility
 
 // create flag if missing ell
@@ -147,7 +147,7 @@ sort fips
 // reshape long
 reshape long inc_, i(fips) j(year_quarter, string)
 
-// create date that stata understand
+// create date that stata understands
 gen date = quarterly(year_quarter, "YQ")
 
 // format date so we understand it
@@ -175,7 +175,7 @@ drop date
 reshape wide inc_, i(fips) j(year_quarter, string)
 
 // list first rows
-li if _n < 10
+list if _n < 4
 
 // end file
 log close                               // close log

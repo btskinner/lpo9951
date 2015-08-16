@@ -16,7 +16,17 @@ opts_chunk$set(echo = FALSE, message = FALSE, comment = NA, cache = FALSE)
 
 ```{r, engine = 'bash'}
 ## run accompanying .do file to get log file for parsing
-stata -b -q do ../do/lecture4_dataset_manipulation.do	 
+stata -b -q do ../do/lecture5_more_dataset_manipulation.do
+## convert plots used in this file to png
+pdir=../plots/
+glist=(api99_ow
+       api99_kdens    
+       xtline_fipsinc    
+       )
+for i in ${glist[@]};
+do
+convert -density 150 -flatten $pdir$i.eps $pdir$i.png;
+done
 ```
 
 ```{r}
@@ -28,179 +38,244 @@ lf <- 'lecture5_more_dataset_manipulation.log'
 
 #### PURPOSE
 
-Learning to manipulate datasets is a key skill for statistical
-analysis. Today we'll work on four skills: subsetting data using
-preserve and restore commands, appending
-data, doing a simple one-to-one merge, and collapsing data.
+Today we'll continue to work on dataset manipulation. We'll focus on
+more complicated merges as well as reshaping.
 
 <br>
 
-## Subsetting with `preserve` and `restore`
+## Downloading `ado` files, setting globals, and loading data
 
-A feature and sometimes curse of Stata is that it can only hold one
-dataset in active memory at a time. As a feature, it helps you keep
-your work organized and, through numerous warning messages, tries to
-make sure you don't lose your work by accidentally forgetting to save
-or mindlessly overwritting your data. The feature feels more like a
-curse when you have multiple datasets that you would like to work with
-simultaneously or, as we will do below, split a single dataset into
-smaller parts.
-
-To repeated subset a large dataset, there are two primary choices:  
-  1. Reload the full dataset into memory after each subset and save  
-  2. Use the `preserve` and `restore` commands
-
-In the code below, notice how the `preserve` and `restore` commands
-bookend the `keep` command, which keeps only those observations that
-fulfill the `if` statement (in this case, the type of school). The
-steps are:  
-  1. preserve dataset in memory  
-  2. subset to keep only school type that we want  
-  3. save new subset dataset  
-  4. restore old dataset  
+Before starting with merges, we first need to set up globals for the
+file and load external `ado` files for commands that we will need
+later. Notice the set up for loading data. Using the `capture confirm
+file` command, Stata checks for the existence of the dataset in our
+data directory. `If` the return code (`_rc`) is any value other than 0,
+that mean the file cannot be found and we need to download and save
+it. Otherwise (`else`), Stata just reads in the locally stored version
+of the dataset.
 
 ```{r}
-start <- '-4- restore old dataset'
-end <- 'merging via the append command'
+start <- 'set globals'
+end <- 'create nonce datasets'
 writeLines(logparse(lf, start = start, end = end))
 ```
 
-*NB:* Note the construction of the global macro to save the datasets in
- the proper subdirectory. Because we to paste the realization of the
- global (`../data/`) and the file name, we have to use the
- construction `${<global name>}` followed with no spaces by the name
- we want to give it. As you can see, `S{datadir}hs` becomes
- `../data/hs.dta`. 
+We also need to create some nonce datasets so that we can use them for
+merging.
+
+```{r}
+start <- 'create nonce datasets'
+end <- 'many-to-one match merging'
+writeLines(logparse(lf, start = start, end = end))
+```
 
 <br>
 
-## Appending Data
+## Many-to-one match merging
 
-Appending data is done when we want to add additional
-*observations* to an existing dataset, using a dataset that has
-exactly the same variable names but different observations. Suppose
-you have data on high schools, middle schools, and elementary schools
-on a variety of performance indicators and you'd like to merge them
-together. The syntax uses, appropriately enough, the `append` command,
-which takes the format `append <new dataset>` (the command assumes the
-first dataset is the one in memory; remember that the middle school subset data
-are still in memory):
+Many times we'd like to add information about a unit that is the same
+across a grouping of units. For instance, we may want to add some
+county data to our already existing school-level data. This really
+isn't much different than the merging we've done before, except we
+need to make certain that the variables are sorted correctly.
 
-```{r}
-start <- 'merging via the append command'
-end <- 'merging via the merge command'
-writeLines(logparse(lf, start = start, end = end))
-```
-The `append` command will not copy over labels from the using
-dataset, so you'll need to make sure they're right in the master
-dataset. The most common error with an append command is to not have
-exactly matching variable names.
-
-<br>
-
-## Merging Data
-
-You can also use Stata's `merge` command to do an append operation in
-special cases. This happens when the merging variable doesn't have
-repeated *observations* in the two datasets, which in turn have exactly
-the same variable structure. Think of a Venn diagram where the circles
-contain exactly the same types of information, but don't overlap; in
-combining them, we've really just grown them into one bigger circle.
-One of the virtues of using `merge` when `append` will suffice is that
-you have access to more information about where the data came from
-once you're done.
+Let's say we have county level data that we'd like to import into our
+school level dataset. Remember that we sorted the county data by the county number
+(its unique id) when we created the dataset. We do the same for the
+district data. Finally we merge the two together:
 
 ```{r}
-start <- 'merging via the merge command'
-end <- 'show merge stats for each merge'
+start <- 'many-to-one match merging'
+end <- 'inspect many-to-one merge'
 writeLines(logparse(lf, start = start, end = end))
 ```
 
-Once you've completed the merge, you can take a look at the \_merge_*
-variables that were generated to see where the data came from.
+Inspecting the merge:
 
 ```{r}
-start <- 'show merge stats for each merge'
-end <- 'split dataset by variables'
+start <- 'inspect many-to-one merge'
+end <- 'one-to-many match merging'
 writeLines(logparse(lf, start = start, end = end))
 ```
+```{r, results = 'asis'}
+writeLines(alignfigure('../plots/api99_ow.png', 'center'))
+```
+
 <br>
 
 #### Quick Exercise
-> Create a dataset that has just middle and elementary schools. Do
-> this using first the `append` command and then the `merge` command.
+
+> Create a (fake) county level variable for average educational 
+> spending. It should be normally distributed and have a mean of 8000
+> and a standard deviation of 1000. Add this variable to a
+> county-level dataset and merge this new dataset into the api
+> dataset. 
 
 <br>
 
-## One-to-one merges
+## One-to-many match merging
 
-A one-to-one merge is when you have exactly the same *observations*
-but new variables to add to the dataset. Say you have *observations*
-with variables split across datasets, e.g., School 1 has variables A,
-B, and C in dataset 1 and variables X, Y, and Z in dataset two. As
-long as School 1 has a unique identifier---a name, an id number,
-etc---you can `merge` these two datasets together so that you have
-access to all of the school's variables for your analysis.
+One to many match merging is the reverse of many to one, and isn't
+really recommended. If you have to, here's how to do it:
 
-First, we need to subset our data again, only this time by splitting
-along columns (*variables*) rather than rows (*observations*):
-
-```{r}
-start <- 'split dataset by variables'
-end <- 'merging back together'
-writeLines(logparse(lf, start = start, end = end))
-```
-
-Now for the merge and view of merge stats:
+Let's say we have some district data on whether or not the principal
+has an EdD. We can open this up and merge the api data with it,
+matching on district number. It's generally better to have the
+*finer-grained* dataset open in memory, and then to match the
+*coarser* data to that one, doing a many-to-one match merge. But
+should you need to complete a one-to-many match merge, here's an example:
 
 ```{r}
-start <- 'merging back together'
-end <- 'collapsing data'
+start <- 'one-to-many match merging'
+end <- 'messy merge'
 writeLines(logparse(lf, start = start, end = end))
 ```
 
 <br>
 
 #### Quick Exercise
-> Create a dataset that has only mobility and percent tested. Next
-> create another dataset that has only the year round and percent
-> responding variables. Now merge these two datasets together using a
-> one-to-one merge.
+> Create a (fake) district level variable for average teacher
+> salary. It should have a mean of 40 and a standard deviation
+> of 5. Merge the api data into this dataset.
 
 <br>
 
-## Collapsing data
+## Messy merge
 
-Collapsing data refers to summarizing data across a type and creating
-a new dataset as a result. Say we want to create a county-level
-dataset from our school data, using the average figures for the
-schools across a set of characteristics. The command would look like
-this:
+Many merge procedures are quite messy. To simulate this, let's
+eliminate a couple of variables from the `api` dataset and remove 10%
+of the observations. We'll put this into a file we're pretending is
+the `api99` file. Next, we'll drop some data from the `api00`
+file. Finally, we'll merge the resulting two files together.
 
 ```{r}
-start <- 'collapsing data'
+start <- 'messy merge'
+end <- 'code for looking at missing values, other patterns'
+writeLines(logparse(lf, start = start, end = end))
+```
+These combined files are likely to have lots of missing data. Let's
+take a look at some of the patterns of missing data. The first command
+to use is called `inspect`. The results from the inspect command look
+like this:
+
+```{r}
+start <- 'code for looking at missing values, other patterns'
+end <- 'command: mdesc'
+writeLines(logparse(lf, start = start, end = end))
+```
+This gives you a nice quick glance at the variable in question. You
+can also use the `mdesc` command, the output of which looks like this:
+
+```{r}
+start <- 'command: mdesc'
+end <- 'command: mvpatterns'
+writeLines(logparse(lf, start = start, end = end))
+```
+This is helpful in giving you a sense of how much missing data you
+have. Last, you can also use the `mvpatterns` command, which gives you
+a sense of the patterns of missing data in your dataset:
+
+```{r}
+start <- 'command: mvpatterns'
+end <- 'create flag if missing ell'
+writeLines(logparse(lf, start = start, end = end))
+```
+Why do we care so much about missing values? Because the missingness
+of variable values is unlikely to be random across all
+observations. Instead, observations with missing values for covariate
+*X* may have different average values for covariate *Z* than those who
+don't have missing values. These differences can greatly skew
+inferences we might hope to make with our analyses, so it is important
+that we have an understanding of the missingness of our data.
+
+Here is a graphical example of the differences in `api99` scores
+between students with `ell` data and those without:
+
+```{r}
+start <- 'create flag if missing ell'
+end <- 'reshaping: wide to long'
+writeLines(logparse(lf, start = start, end = end))
+```
+```{r, results = 'asis'}
+writeLines(alignfigure('../plots/api99_kdens.png', 'center'))
+```
+<br>
+
+#### Quick Exercise
+
+> Create a new dataset by dropping the meals and emergency credentials
+> variables. Eliminate half of the data. Next create another dataset,
+> dropping the parental education variables, and again get rid of half
+> of the data. Merge the remaining two datasets together, then
+> describe the patterns of missing data.
+
+<br>
+
+## Reshaping data
+### Wide to long
+
+The last major type of data manipulation is known as
+`reshaping`. Many datasets have multiple observations per
+unit. One way to store this type of data is in a wide format, meaning 
+each additional observation is another variable. Here's some data from
+the Bureau of Economic Analysis on quarterly income growth that's in
+wide format:
+
+```{r}
+start <- 'reshaping: wide to long'
+end <- 'reshape long'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+We want to have this data in long format, meaning that there will be
+multiple lines per unit, each one identifying a year and a
+quarter. The command for this is `reshape long <stub>, i(<index>)
+j(<time var>)`. As you can see after the command, each unit/year now
+has its own line, and income is a single variable.
+
+```{r}
+start <- 'reshape long'
+end <- 'organize data so we can graph it with xtline'
+writeLines(logparse(lf, start = start, end = end))
+```
+
+We can now more easily set the date in a format Stata understands and
+take advantage of graphing commands such as `xtline`:
+
+```{r}
+start <- 'organize data so we can graph it with xtline'
+end <- 'reshaping: long to wide'
+writeLines(logparse(lf, start = start, end = end))
+```
+```{r, results = 'asis'}
+writeLines(alignfigure('../plots/xtline_fipsinc.png', 'center'))
+```
+<br>
+
+### Long to wide
+
+The reverse of the above is reshaping from long to wide. To shift the
+above dataset back, use the same command, but substitute `wide` for
+`long`:
+
+```{r}
+start <- 'reshaping: long to wide'
 end <- 'end file'
 writeLines(logparse(lf, start = start, end = end))
 ```
 
-*NB:* Notice the check using the `unique` command. If the number
- didn't align or gave some unexpected value, we should recheck our
- data and code.
-
 <br>
 
 #### Quick Exercise
-> Create a district level dataset that contains district level
-> averages for the following variables:  
->   1. apioo  
->   2. api99  
->   3. ell  
->   4. meals  
-> Do the same thing using just district *medians*. 
+
+> Download data on personal per capita from 1950 to the present for
+> all 50 states from the
+> [Bureau of Economic Analysis](http://www.bea.gov/regional/downloadzip.cfm). Create
+> a plot using the `xtline` command. 
 
 <br>
 <br>
 
-*Init: 15 August 2015; Updated: `r format(Sys.Date(), format = "%d %B %Y")`*
+*Init: 16 August 2015; Updated: `r format(Sys.Date(), format = "%d %B %Y")`*
 
 <br>
