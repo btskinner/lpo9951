@@ -11,9 +11,10 @@
 # Data directory - generally want to ignore big and created files
 /data/*
 
-!/data/school_data.csv
 !/data/caschool.dta
 !/data/census.dta
+!/data/income.csv
+!/data/school_data.csv
 
 # Assignment answers
 /assignments/answers
