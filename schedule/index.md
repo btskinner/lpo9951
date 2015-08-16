@@ -10,7 +10,7 @@ The schedule for all class meetings is as follows. Assignments are given in the 
 
 **Class Introduction**  
 
-LECTURE 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture1_introduction.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture1_introduction.pdf)]  
+LECTURE 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/5cfc341f1ec7af1ca673277025afa9622bd25e80/lecture/lecture1_introduction.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture1_introduction.pdf)]  
 
 ASSIGNMENT 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment1.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment1.pdf)]  
 
@@ -28,7 +28,7 @@ ASSIGNMENT 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 **Working with NCES Datasets**
 
-LECTURE 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/0befc908baf6f6effbc812e4c38e86187bf162a0/lecture/lecture3_nces_datasets.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture3_nces_datasets.pdf)]  
+LECTURE 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/5cfc341f1ec7af1ca673277025afa9622bd25e80/lecture/lecture3_nces_datasets.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture3_nces_datasets.pdf)]  
 
 ASSIGNMENT 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment3.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment3.pdf)]
 
@@ -47,7 +47,7 @@ ADDITIONAL: Summary research area
 
 **More Dataset Manipulation: One to many merging and many to one merging**
 
-LECTURE 5: 
+LECTURE 5: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture5_more_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture5_more_dataset_manipulation.pdf)] 
 
 ASSIGNMENT 5:
 
