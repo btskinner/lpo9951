@@ -19,7 +19,7 @@ ASSIGNMENT 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 **Stata Basics**
 
-LECTURE 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture2_stata_basics.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture2_stata_basics.pdf)]  
+LECTURE 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture2_stata_basics.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture2_stata_basics.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture2_stata_basics.do)]     
 
 ASSIGNMENT 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment2.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment2.pdf)]  
 
@@ -28,7 +28,7 @@ ASSIGNMENT 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 **Working with NCES Datasets**
 
-LECTURE 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/5cfc341f1ec7af1ca673277025afa9622bd25e80/lecture/lecture3_nces_datasets.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture3_nces_datasets.pdf)]  
+LECTURE 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/5cfc341f1ec7af1ca673277025afa9622bd25e80/lecture/lecture3_nces_datasets.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture3_nces_datasets.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture3_nces_datasets.do)]    
 
 ASSIGNMENT 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment3.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment3.pdf)]
 
@@ -36,7 +36,7 @@ ASSIGNMENT 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 **Dataset Manipulation: Subsetting, appending, collapsing, and merging**
 
-LECTURE 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture4_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture4_dataset_manipulation.pdf)]  
+LECTURE 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture4_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture4_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture4_dataset_manipulation.do)]   
 
 ASSIGNMENT 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment4.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment4.pdf)]
 
@@ -47,7 +47,7 @@ ADDITIONAL: Summary research area
 
 **More Dataset Manipulation: One to many merging and many to one merging**
 
-LECTURE 5: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture5_more_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture5_more_dataset_manipulation.pdf)] 
+LECTURE 5: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture5_more_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture5_more_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture5_more_dataset_manipulation.do)]   
 
 ASSIGNMENT 5:
 
