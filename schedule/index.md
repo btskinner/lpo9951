@@ -49,7 +49,7 @@ ADDITIONAL: Summary research area
 
 LECTURE 5: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture5_more_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture5_more_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture5_more_dataset_manipulation.do)]   
 
-ASSIGNMENT 5:
+ASSIGNMENT 5: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment5.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment5.pdf)]  
 
 ## September 30
 
