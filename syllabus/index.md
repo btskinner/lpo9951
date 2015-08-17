@@ -2,6 +2,7 @@
 layout: default
 title: Syllabus
 author: Benjamin Skinner
+date: LPO 9951 | Fall 2015
 ---
 
 # Course Overview
