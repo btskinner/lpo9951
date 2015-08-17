@@ -36,7 +36,7 @@ simplify complex analyses.
 
 ## Assignments
 
-There will be a total of ten assignments, which will be graded
+There will be a total of eleven assignments, which will be graded
 pass/fail. All assignments, unless otherwise stated, are due by midnight of the evening before the next class. 
 Late assignments will not be accepted. These assignments will account for half of your grade. 
 Collaboration on assignments is fine, though many of the assignments will ask you to work with
