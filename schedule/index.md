@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Schedule
+date: LPO 9951 | Fall 2015
+author: Benjamin Skinner
 ---
 
 # Schedule of Meetings & Assignments
