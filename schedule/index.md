@@ -58,9 +58,9 @@ ASSIGNMENT 5: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 **Introduction to Programming and Helpful Functions**
 
-LECTURE 6: 
+LECTURE 6: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture6_programming.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture6_programming.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture6_programming.do)]   
 
-ASSIGNMENT 6: 
+ASSIGNMENT 6: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment6.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment6.pdf)]  
 
 ## October 7
 
