@@ -101,7 +101,9 @@ ASSIGNMENT 10:
 
 **Descriptive Statistics: tabular and graphical approaches**
 
-LECTURE 11: 
+LECTURE 11:  
+
+ASSIGNMENT 11:  
 
 
 ## November 11
