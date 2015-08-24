@@ -64,16 +64,16 @@ ASSIGNMENT 6: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 ## October 7
 
-**Sampling: simple sampling designs**
+**Sampling: Part I**
 
-LECTURE 7: 
+LECTURE 7: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture7_sampling_part1.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture7_sampling_part1.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture7_sampling_part1.do)]   
 
 ASSIGNMENT 7: 
 
 
 ## October 14
 
-**Sampling: complex sampling designs**
+**Sampling: Part II**
 
 LECTURE 8: 
 
