@@ -13,9 +13,13 @@
 
 !/data/caschool.dta
 !/data/census.dta
+!/data/fakehs.csv
+!/data/fakesat.dta
+!/data/fakesat_freq.dta
 !/data/income.csv
 !/data/loondata.dta
 !/data/school_data.csv
+!/data/singleclasstest.dta
 
 # Assignment answers
 /assignments/answers
