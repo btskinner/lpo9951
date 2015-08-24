@@ -76,7 +76,7 @@ ASSIGNMENT 7: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 LECTURE 8: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture8_sampling_part2.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture8_sampling_part2.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture8_sampling_part2.do)]   
 
-ASSIGNMENT 8:  
+ASSIGNMENT 8: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment8.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment8.pdf)]  
 
 ADDITIONAL: Research questions
 
