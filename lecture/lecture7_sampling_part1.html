@@ -455,10 +455,12 @@ atrisk       |
 . sample $ss, count by(grade)             // sample
 (1,803 observations deleted)</code></pre>
 <p><br></p>
-<p>To compute the mean within each stratum, we’ll just take the simple mean of the observations within that stratum. We could weight each observation by the inverse of the selection, in this case, the number of students in the grade over the number selected, (  ), and use equation (6), but the <span class="math">\(N_h\)</span> would cancel out and we would be left with the simple sample average.</p>
+<p>To compute the mean within each stratum, we’ll just take the simple mean of the observations within that stratum. We could weight each observation by the inverse of the selection, in this case, the number of students in the grade over the number selected and use equation (6), but the number of students in the grade would cancel out and we would be left with the simple sample average.</p>
 <p>To compute the within stratum variance for each stratum, we’ll use part of equation (9)</p>
 <p><span class="math">\[ s^2_h=\Bigg(\frac{N_h - n_h}{N_h - 1}\Bigg) \Bigg(\frac{s^2_h}{n_h}\Bigg) \]</span></p>
-<p>In this simple stratfication design, the population variance is just the weighted sum of the individual strata variances. So to get an estimate of the population variance, we’ll weight each one by <span class="math">\(\Big(\frac{N_h}{N}\Big)^2\)</span> and add them together.</p>
+<p>In this simple stratfication design, the population variance is just the weighted sum of the individual strata variances. So to get an estimate of the population variance, we’ll weight each one by</p>
+<p><span class="math">\[\Big(\frac{N_h}{N}\Big)^2\]</span></p>
+<p>and add them together.</p>
 <p>To compute these values, we will use Stata’s <code>preserve</code> and <code>restore</code> commands along with <code>collapse</code>, which allows us to compute the various means and standard deviations that we need.</p>
 <pre><code>. preserve 
 
@@ -699,7 +701,7 @@ Mean estimation                   Number of obs   =        872
 . tempfile stratmeans                          // init temporary file
 
 . save `stratmeans'                            // save temporary file
-file /var/folders/p7/5ylvzpld32x89bnkw42jj7dw0000gr/T//St10131.000004 saved
+file /var/folders/p7/5ylvzpld32x89bnkw42jj7dw0000gr/T//St10270.000004 saved
 
 . restore
 

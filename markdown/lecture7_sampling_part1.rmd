@@ -287,8 +287,8 @@ writeLines(logparse(lf, start = start, end = end))
 To compute the mean within each stratum, we'll just take the simple
 mean of the observations within that stratum. We could weight each
 observation by the inverse of the selection, in this case, the number
-of students in the grade over the number selected, \( \frac{N_h}{n_h}
-\), and use equation (6), but the \(N_h\) would cancel out and we
+of students in the grade over the number selected and use equation
+(6), but the number of students in the grade would cancel out and we
 would be left with the simple sample average.
 
 To compute the within stratum variance for each stratum, we'll use
@@ -299,7 +299,10 @@ part of equation (9)
 In this simple stratfication design, the population variance is just
 the weighted sum of the individual strata variances. So to get an
 estimate of the population variance, we'll weight each one by
-\(\Big(\frac{N_h}{N}\Big)^2\) and add them together.
+
+\[\Big(\frac{N_h}{N}\Big)^2\]
+
+and add them together.
 
 To compute these values, we will use Stata's `preserve` and `restore`
 commands along with `collapse`, which allows us to compute the various
