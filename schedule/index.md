@@ -68,8 +68,7 @@ ASSIGNMENT 6: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 LECTURE 7: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture7_sampling_part1.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture7_sampling_part1.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture7_sampling_part1.do)]   
 
-ASSIGNMENT 7: 
-
+ASSIGNMENT 7: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment7.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment7.pdf)]  
 
 ## October 14
 
