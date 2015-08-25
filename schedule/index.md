@@ -84,9 +84,9 @@ ADDITIONAL: Research questions
 
 **Data Cleaning**
 
-LECTURE 9: 
+LECTURE 9: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture9_cleaning.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture9_cleaning.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture9_cleaning.do)]   
 
-ASSIGNMENT 9:
+ASSIGNMENT 9: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment9.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment9.pdf)]  
 
 ## October 28
 

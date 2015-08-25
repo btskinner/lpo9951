@@ -4,7 +4,9 @@ layout: default
 
 # Data  
 
-[caschool](https://github.com/btskinner/lpo9951/raw/master/data/caschool.dta?raw=true) [Stata] ~ 62 KB  
+[caschool](https://github.com/btskinner/lpo9951/raw/master/data/caschool.dta?raw=true)
+[Stata] ~ 62 KB  
+[caschool_problem](https://github.com/btskinner/lpo9951/raw/master/data/caschool_problem.dta?raw=true) [Stata] ~ 64 KB  
 [census](https://github.com/btskinner/lpo9951/blob/ master/data/census.dta?raw=true) [Stata] ~ 5 KB      
 [ECLS-K (1998-99)](http://nces.ed.gov/edat/data/zip/ECLSK_1998-99_v1_0_Stata_Datasets.zip) [zip] ~ 273.7 MB  
 [ELS (2002) student](http://nces.ed.gov/edat/data/zip/ELS_2002-12_PETS_v1_0_Student_Stata_Datasets.zip)
