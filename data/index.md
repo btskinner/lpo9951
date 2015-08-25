@@ -22,7 +22,10 @@ layout: default
 [csv] ~ 15 KB  
 [loondata](https://github.com/btskinner/lpo9951/raw/master/data/loondata.dta?raw=true)
 [Stata] ~ 42.7 KB  
-[PISA (2012) student](http://pisa2012.acer.edu.au/downloads/INT_COG12_DEC03.zip) [zip] ~ 27.8 MB  
+[PISA (2012) student](http://pisa2012.acer.edu.au/downloads/INT_COG12_DEC03.zip)
+[zip] ~ 27.8 MB  
+[plans](https://github.com/btskinner/lpo9951/raw/master/data/plans.dta?raw=true)
+[Stata] ~ 947.5 KB  
 [SASS (1999-00)](http://nces.ed.gov/edat/data/zip/SASS_1999-00_TFS_2000-01_v1_0_CSV_Datasets.zip) [zip] ~ 35.4 MB  
 [school_data](https://github.com/btskinner/lpo9951/blob/master/data/school_data.csv?raw=true)
 [csv] ~ 4 KB  

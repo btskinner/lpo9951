@@ -92,9 +92,9 @@ ASSIGNMENT 9: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 **Data Validation**
 
-LECTURE 10: 
+LECTURE 10: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture10_validation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture10_validation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture10_validation.do)]   
 
-ASSIGNMENT 10: 
+ASSIGNMENT 10: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment10.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment10.pdf)]  
 
 ## November 4
 
