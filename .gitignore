@@ -12,6 +12,7 @@
 /data/*
 
 !/data/caschool.dta
+!/data/caschool_problem.dta
 !/data/census.dta
 !/data/fakehs.csv
 !/data/fakesat.dta
