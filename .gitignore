@@ -1,6 +1,7 @@
 
 # Plots
 *.eps
+*.gph
 
 # R files
 *.Rhistory
@@ -28,3 +29,6 @@
 
 # Student files
 /student
+
+# Lecture nots
+/do/lecturenotes

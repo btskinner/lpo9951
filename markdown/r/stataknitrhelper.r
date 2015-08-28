@@ -113,5 +113,36 @@ alignfigure <- function(image, alignment = c('left', 'center', 'right')) {
     
 }
 
+includetable <- function(table, alignment = c('left', 'center', 'right')) {
+
+    ## -------------------------------------------------------------------------
+    ## PURPOSE
+    ##
+    ## Like -alignfigure- above but for the inclusion of tables
+    ##
+    ## -------------------------------------------------------------------------
+
+    ## need to preserve html from pandoc
+    startpreserve <- '<!--html_preserve-->'
+    endpreserve <- '<!--/html_preserve-->'
+    
+    ## opening tag
+    opentag <- paste0('<div style = \"align: ', alignment, '\">')
+
+    ## content filler
+    fill <- readLines(table)
+
+    ## replace first line so will center
+    fill[1] <- '<table style = \"margin-left:auto; margin-right:auto;\">'
+
+    ## closing tag
+    closetag <- '</div>'
+
+    ## return
+    return(c(startpreserve, opentag, fill, closetag, endpreserve))
+    
+}
+
+
 
 ## END
