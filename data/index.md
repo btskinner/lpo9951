@@ -25,7 +25,7 @@ layout: default
 [PISA (2012) student](http://pisa2012.acer.edu.au/downloads/INT_COG12_DEC03.zip)
 [zip] ~ 27.8 MB  
 [plans](https://github.com/btskinner/lpo9951/raw/master/data/plans.dta?raw=true)
-[Stata] ~ 947.5 KB
+[Stata] ~ 947.5 KB  
 [plans2](https://github.com/btskinner/lpo9951/raw/master/data/plans2.dta?raw=true)
 [Stata] ~ 2 MB   
 [SASS (1999-00)](http://nces.ed.gov/edat/data/zip/SASS_1999-00_TFS_2000-01_v1_0_CSV_Datasets.zip) [zip] ~ 35.4 MB  
