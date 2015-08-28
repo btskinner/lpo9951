@@ -100,7 +100,7 @@ ASSIGNMENT 10: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignment
 
 **Descriptive Statistics: tabular and graphical approaches**
 
-LECTURE 11:  
+LECTURE 11: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture11_descriptives.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture11_descriptives.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture11_descriptives.do)]   
 
 ASSIGNMENT 11:  
 
