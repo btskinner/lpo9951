@@ -1,0 +1,53 @@
+---
+title: Assignment 11
+author: LPO 9951 | Fall 2015
+output: 
+  html_document:
+   theme: cosmo
+   css: ./css/custom.css
+---
+
+There are two reasons for including descriptive statistics in your
+papers. First, the reader needs to know some basic information about
+the indicators for the dependent and independent variables, including:
+
+  * What types of variables (e.g., continuous, categorical, ordinal)
+  are they?  
+  * What is the shape of the distribution for the variables?  
+  * What are the measures of central tendency and variability
+  associated with these indicators?  
+  * How many missing values are there and is there a pattern to which
+  variables are missing which values?  
+  
+Second, the descriptive statistics in a paper should make an effort to
+lay the groundwork for the analysis to come. Most analytical
+techniques that you will use (particularly regression) are complex
+enough that you may lose many readers if you don't first help them
+understand the patterns that you see in the data.  
+
+The following list provides a brief breakdown on some techniques you
+can use to identify relationships among variables:  
+
+  * **Continuous with other continuous variables**  
+	  * *tabular:* conditional means  
+	  * *graphical:* scatterplots  
+  * **Continuous with other categorical variables**
+      * *tabular:* conditional means
+      * *graphical:* scatterplots, boxplots, dotplots  
+  * **Categorical with other categorical variables**
+      * *tabular:* cross-tabs
+      * *graphical:* conditional histogram  
+  
+For this assignment, compare your dependent variable with at least two
+continuous and one categorical variable. Create at least two nicely
+labeled and formatted tables, and at least four graphical displays of
+the relationships you find. Graphics should be neatly labeled, capable
+of being interpreted without additional information, and should be
+visually appealing. No additional text is needed. Spend your time on
+making a compelling argument just with graphics and tables.  
+
+Submit your do file and a word document (or if feeling bold, a .tex
+file to produce a LaTeX document) with the tables and graphics
+to me.  
+
+<br>
