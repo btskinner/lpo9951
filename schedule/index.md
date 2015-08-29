@@ -102,7 +102,7 @@ ASSIGNMENT 10: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignment
 
 LECTURE 11: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture11_descriptives.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture11_descriptives.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture11_descriptives.do)]   
 
-ASSIGNMENT 11:  
+ASSIGNMENT 11:  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment11.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment11.pdf)]  
 
 
 ## November 11
