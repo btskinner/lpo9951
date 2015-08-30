@@ -109,7 +109,7 @@ ASSIGNMENT 11:  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignmen
 
 **Reproducible Research I: version control**
 
-BEFORE CLASS READING: [[Web](http://scfbm.biomedcentral.com/articles/10.1186/1751-0473-8-7)] [[PDF](http://download.springer.com/static/pdf/169/art%253A10.1186%252F1751-0473-8-7.pdf?originUrl=http%3A%2F%2Fscfbm.biomedcentral.com%2Farticle%2F10.1186%2F1751-0473-8-7&token2=exp=1440974261~acl=%2Fstatic%2Fpdf%2F169%2Fart%25253A10.1186%25252F1751-0473-8-7.pdf*~hmac=eb6c2b8b379a3226db10b4c9a5ffccf7eb6bc3a09c5f4e83ba05cae79fe383e1)]
+BEFORE CLASS READING: [[Web](http://scfbm.biomedcentral.com/articles/10.1186/1751-0473-8-7)]  
 
 LECTURE 12: 
 
