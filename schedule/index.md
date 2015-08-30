@@ -111,7 +111,7 @@ ASSIGNMENT 11:  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignmen
 
 BEFORE CLASS READING: [[Web](http://scfbm.biomedcentral.com/articles/10.1186/1751-0473-8-7)]  
 
-LECTURE 12: 
+LECTURE 12: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture12_represearch_vc.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture12_represearch_vc.pdf)]
 
 ## November 18
 
