@@ -28,13 +28,14 @@ log using "lecture6_programming.log", replace    // open new log
 //   5.2 numerical locals
 //   5.3 varlist locals
 //   5.4 nested locals
-// 6.0 Switches
-// 7.0 Loops
-//   7.1 if / else
-//   7.2 foreach
-//   7.3 forvalues
-//   7.4 while
-// 8.0 Nests
+// 6.0 Matrices
+// 7.0 Switches
+// 8.0 Loops
+//   8.1 if / else
+//   8.2 foreach
+//   8.3 forvalues
+//   8.4 while
+// 9.0 Nests
 
 //  0.0 Set preferences/globals/load data
    
@@ -158,7 +159,35 @@ local whoareyou loon upper seasons
 local wholeshebang `contributions' `whoareyou'
 sum `wholeshebang', sep(3)
 
-//  6.0 Switch
+// 6.0 Matrix
+
+mean ideas1 ideas2 ideas3
+
+// return list to show r(table)
+return list
+matrix list r(table)
+
+// store r(table)
+matrix meanse = r(table)
+matrix list meanse
+
+// subset matrix
+matrix meanse = meanse[1..2,1...]
+matrix list meanse
+
+// transpose matrix
+matrix tmeanse = meanse'
+matrix list tmeanse
+
+// init blank 5 X 2 matrix
+matrix blank = J(5,2,.)
+
+// add to first row and show matrix
+matrix blank[1,1] = 1
+matrix blank[1,2] = 6
+matrix list blank
+
+//  7.0 Switch
 
 // set switch
 local graphs = 0
@@ -167,9 +196,9 @@ if `graphs' == 1 {
     scatter shells1 feathers1 if loon == 1
 }
 
-//  7.0 Loops
+//  8.0 Loops
 
-//  7.1 if/else command
+//  8.1 if/else command
 
 local switch = 0    
     
@@ -180,7 +209,7 @@ else {
     sum loon if upper == 1
 }
   
-//  7.2 foreach command
+//  8.2 foreach command
 
 foreach var of varlist shells1-feathers3 {
     mean `var'
@@ -196,7 +225,7 @@ foreach val in id {
     list `val' if eggs1 < 3
 }
 
-//  7.3 forvalues command
+//  8.3 forvalues command
 
 forvalues x = 1/10 {
     di `x'
@@ -210,7 +239,7 @@ forvalues z = 2 4 to 10 {
     di `z'
 }
 
-//  7.4 while command
+//  8.4 while command
 
 local i = 1
 
@@ -219,7 +248,7 @@ while `i' < 11 {
     local i = `i' + 1
 }
 
-//  8.0 Nests
+//  9.0 Nests
 
 // set up locals for nest
 local thoughts ideas1 ideas2 ideas3
@@ -232,8 +261,7 @@ forvalues i = 1/2 {
         local type "Loon"
     }
     foreach var of local thoughts {
-        di `i'
-	di "`type'"
+        di "`i': `type'"
 	sum `var' if loon == `i' - 1
     }
 }

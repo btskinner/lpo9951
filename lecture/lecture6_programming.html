@@ -79,6 +79,7 @@ img {
 <li><a href="#globals">Globals</a></li>
 <li><a href="#locals">Locals</a></li>
 </ul></li>
+<li><a href="#matrices">Matrices</a></li>
 <li><a href="#switches">Switches</a></li>
 <li><a href="#loops">Loops</a><ul>
 <li><a href="#if-else"><code>if</code> / <code>else</code></a></li>
@@ -141,13 +142,14 @@ img {
 . //   5.2 numerical locals
 . //   5.3 varlist locals
 . //   5.4 nested locals
-. // 6.0 Switches
-. // 7.0 Loops
-. //   7.1 if / else
-. //   7.2 foreach
-. //   7.3 forvalues
-. //   7.4 while
-. // 8.0 Nests</code></pre>
+. // 6.0 Matrices
+. // 7.0 Switches
+. // 8.0 Loops
+. //   8.1 if / else
+. //   8.2 foreach
+. //   8.3 forvalues
+. //   8.4 while
+. // 9.0 Nests</code></pre>
 <p><br></p>
 </div>
 <div id="file-header" class="section level2">
@@ -179,6 +181,7 @@ img {
     Variable |        Obs        Mean    Std. Dev.       Min        Max
 -------------+---------------------------------------------------------
       flock1 |        278    78270.19    20389.95      12812     136822</code></pre>
+<p><br></p>
 <p>A slightly easier bit of code would use <code>tab</code> with the <code>summarize</code> option:</p>
 <pre><code>. tab loon, summarize(flock1)
 
@@ -190,7 +193,7 @@ img {
           1 |   78270.187   20389.948         278
 ------------+------------------------------------
       Total |   79913.126   20397.942         435</code></pre>
-<p>Still another line of code uses the <code>bysort</code> command, which takes the form <code>bysort &lt;sorting variable&gt;: &lt;command&gt; &lt;variable&gt;</code>:</p>
+<p><br> Still another line of code uses the <code>bysort</code> command, which takes the form <code>bysort &lt;sorting variable&gt;: &lt;command&gt; &lt;variable&gt;</code>:</p>
 <pre><code>. bysort loon: sum flock1
 
 -------------------------------------------------------------------------------
@@ -206,7 +209,7 @@ img {
     Variable |        Obs        Mean    Std. Dev.       Min        Max
 -------------+---------------------------------------------------------
       flock1 |        278    78270.19    20389.95      12812     136822</code></pre>
-<p>We could actually ask for numerous variables summarized in this way.</p>
+<p><br> We could actually ask for numerous variables summarized in this way.</p>
 <pre><code>. bysort loon: sum flock1 flock2 flock3
 
 -------------------------------------------------------------------------------
@@ -228,7 +231,7 @@ img {
       flock3 |        278    76961.31    27805.51      14268     168056</code></pre>
 <p><br></p>
 <div id="quick-exercise" class="section level4">
-<h4>Quick Exercise</h4>
+<h4>QUICK EXERCISE</h4>
 <blockquote>
 <p>Find the average number of feathers in each period by the double condition of being a loon and location of nest.</p>
 </blockquote>
@@ -261,7 +264,7 @@ scalars:
 
 . di r(sd)
 26180.226</code></pre>
-<p>The second type of information that is stored is under <code>e</code>. These can be found by using <code>ereturn list</code>:</p>
+<p><br> The second type of information that is stored is under <code>e</code>. These can be found by using <code>ereturn list</code>:</p>
 <pre><code>. mean shells1
 
 Mean estimation                   Number of obs   =        435
@@ -303,7 +306,7 @@ functions:
 
 . di e(N)
 435</code></pre>
-<p>Keep in mind, however, that each time you run an expression, your previously stored information in both <code>return</code> and <code>ereturn</code> are overwritten. For example, if you run a <code>sum</code> command on one variable, you might have an <code>r(mean) = 100</code>. However, the next time you run <code>sum</code> on a new variable, the <code>r(mean)</code> will be overwritten, so you need to be aware of which variable you are using.</p>
+<p><br> Keep in mind, however, that each time you run an expression, your previously stored information in both <code>return</code> and <code>ereturn</code> are overwritten. For example, if you run a <code>sum</code> command on one variable, you might have an <code>r(mean) = 100</code>. However, the next time you run <code>sum</code> on a new variable, the <code>r(mean)</code> will be overwritten, so you need to be aware of which variable you are using.</p>
 <p>So how do we store this information into memory for future use without fear of it being overwritten? There are multiple ways to do so. One easy way includes naming and storing your own scalar using the <code>scalar</code> command, which takes the form of <code>scalar &lt;name&gt; = &lt;value&gt;</code>.</p>
 <p>You can name a scalar whatever you want and assign it a value. Let’s do this for the mean of total number of shells in the first period and show how this preserves the value despite the fact that we run another mean on feathers.</p>
 <pre><code>. sum shells1
@@ -324,7 +327,7 @@ functions:
 114167.83</code></pre>
 <p><br></p>
 <div id="quick-exercise-1" class="section level4">
-<h4>Quick Exercise</h4>
+<h4>QUICK EXERCISE</h4>
 <blockquote>
 <p>Use a scalar to calculate the average number of shells across all three periods.</p>
 </blockquote>
@@ -347,7 +350,7 @@ Mean estimation                   Number of obs   =        435
 . estimates store m_ideas1
 
 .    </code></pre>
-<p>Now we’ll use estimates restore and estimates replay to bring up previous information that we’ve stored.</p>
+<p><br> Now we’ll use estimates restore and estimates replay to bring up previous information that we’ve stored.</p>
 <pre><code>. mean eggs1
 
 Mean estimation                   Number of obs   =        435
@@ -460,7 +463,7 @@ Mean estimation                   Number of obs   =        435
      +-----------------------------+
 
 .     </code></pre>
-<p>And here’s how we might use varlists. Notice how instead of listing every variable, we can list the starting and final column with a <code>-</code> between. Using this format requires that we know the order of the variables in our dataset. We can also use wildcards such as <code>*</code>. As you can see, Stata returns every variable that starts with <code>flock</code>. Keep this feature in mind as you name your variables.</p>
+<p><br> And here’s how we might use varlists. Notice how instead of listing every variable, we can list the starting and final column with a <code>-</code> between. Using this format requires that we know the order of the variables in our dataset. We can also use wildcards such as <code>*</code>. As you can see, Stata returns every variable that starts with <code>flock</code>. Keep this feature in mind as you name your variables.</p>
 <pre><code>. sum shells1-flock3, sep(3)
 
     Variable |        Obs        Mean    Std. Dev.       Min        Max
@@ -570,7 +573,7 @@ S_MODE:         batch</code></pre>
 11.517241
 
 .     </code></pre>
-<p>Locals can also store strings (such as variable names):</p>
+<p><br> Locals can also store strings (such as variable names):</p>
 <pre><code>. local contributions ideas1 ideas2 ideas3 eggs1 eggs2 eggs3
 
 . sum `contributions', sep(3)
@@ -584,7 +587,7 @@ S_MODE:         batch</code></pre>
        eggs1 |        435    5.878161    1.951333          1         14
        eggs2 |        435    5.924138    2.155529          1         16
        eggs3 |        435    5.786207     2.95867         -4         16</code></pre>
-<p>Even better, locals can be nested, that is, a local can hold other locals:</p>
+<p><br> Even better, locals can be nested, that is, a local can hold other locals:</p>
 <pre><code>. local whoareyou loon upper seasons
 
 . local wholeshebang `contributions' `whoareyou'
@@ -608,6 +611,106 @@ S_MODE:         batch</code></pre>
 <p><br></p>
 </div>
 </div>
+<div id="matrices" class="section level2">
+<h2>Matrices</h2>
+<p>Stata has a powerful matrix language under the hood called Mata. If you are feeling particularly bold, you can perform most if not all of your analyses through linear algebra. More realistically, you will use Stata matrices to store output in a convenient format.</p>
+<p>For example, let’s say you want to gather the mean and standard error of multiple variables. Using <code>return list</code> after <code>mean</code>, we can see that Stata stores the underlying information it presents in a matrix called <code>r(table)</code>.</p>
+<pre><code>. mean ideas1 ideas2 ideas3
+
+Mean estimation                   Number of obs   =        435
+
+--------------------------------------------------------------
+             |       Mean   Std. Err.     [95% Conf. Interval]
+-------------+------------------------------------------------
+      ideas1 |   11.51724    .224046      11.07689    11.95759
+      ideas2 |   11.56322   .2297929      11.11157    12.01486
+      ideas3 |   11.42529   .2451319      10.94349    11.90708
+--------------------------------------------------------------
+
+. // return list to show r(table)
+. return list
+
+scalars:
+              r(level) =  95
+
+macros:
+           r(mcmethod) : &quot;noadjust&quot;
+
+matrices:
+              r(table) :  9 x 3
+
+. matrix list r(table)
+
+r(table)[9,3]
+           ideas1     ideas2     ideas3
+     b  11.517241  11.563218  11.425287
+    se  .22404603  .22979287  .24513187
+     t  51.405692  50.320178  46.608739
+pvalue  1.10e-186  3.07e-183  4.76e-171
+    ll  11.076891  11.111573  10.943494
+    ul  11.957592  12.014864  11.907081
+    df        434        434        434
+  crit  1.9654451  1.9654451  1.9654451
+ eform          0          0          0</code></pre>
+<p><br></p>
+<p>Unfortunately, in a “you can’t get there from here” kind of situation, you cannot subset the <code>r(table)</code> matrix directly. Instead, we must first store it another matrix. Once that is accomplished, we can subset the matrix to just the first two rows that we want by using square brackets, <code>[]</code>, after the matrix. Following convention, the brackets use the format [<em>i</em>, <em>j</em>], with <em>i</em> standing in for row and <em>j</em> for column. When more than one row or column are wanted, Stata uses the form <code>[i_start .. i_end, j_start .. j_end]</code>. Note that any of those four positions can be replaced by <code>.</code>, which in this case roughly means <em>all</em>. After subsetting the matrix, we can transpose it using a single quotation mark, <code>'</code>.</p>
+<pre><code>. matrix meanse = r(table)
+
+. matrix list meanse
+
+meanse[9,3]
+           ideas1     ideas2     ideas3
+     b  11.517241  11.563218  11.425287
+    se  .22404603  .22979287  .24513187
+     t  51.405692  50.320178  46.608739
+pvalue  1.10e-186  3.07e-183  4.76e-171
+    ll  11.076891  11.111573  10.943494
+    ul  11.957592  12.014864  11.907081
+    df        434        434        434
+  crit  1.9654451  1.9654451  1.9654451
+ eform          0          0          0
+
+. // subset matrix
+. matrix meanse = meanse[1..2,1...]
+
+. matrix list meanse
+
+meanse[2,3]
+       ideas1     ideas2     ideas3
+ b  11.517241  11.563218  11.425287
+se  .22404603  .22979287  .24513187
+
+. // transpose matrix
+. matrix tmeanse = meanse'
+
+. matrix list tmeanse
+
+tmeanse[3,2]
+                b         se
+ideas1  11.517241  .22404603
+ideas2  11.563218  .22979287
+ideas3  11.425287  .24513187</code></pre>
+<p><br></p>
+<p>Finally, it is useful to know how to initialize a blank matrix. Using the command <code>matrix &lt;name&gt; = J(&lt;rows&gt;, &lt;columns&gt;, &lt;fill&gt;)</code>, we can initialize a matrix of <em>rows</em> by <em>columns</em> size that is filled with <em>fill</em>. Choosing <code>.</code> is implicitly choosing a blank matrix.</p>
+<p>Once the matrix is created, we can fill its cells one by one with output from various commands or simply values that we want.</p>
+<pre><code>. matrix blank = J(5,2,.)
+
+. // add to first row and show matrix
+. matrix blank[1,1] = 1
+
+. matrix blank[1,2] = 6
+
+. matrix list blank
+
+blank[5,2]
+    c1  c2
+r1   1   6
+r2   .   .
+r3   .   .
+r4   .   .
+r5   .   .</code></pre>
+<p><br></p>
+</div>
 <div id="switches" class="section level2">
 <h2>Switches</h2>
 <p>Now that weve learned how to create locals, lets use them to create switches. Switches are impor- tant because you can use them to turn on and off portions of your code. For example, you can use them to delegate whether you want to input the full dataset or your most recently save data. You could also use them to determine whether you want to turn graphs on or off. They can be very useful.</p>
@@ -617,6 +720,7 @@ S_MODE:         batch</code></pre>
 . if `graphs' == 1 {
 .     scatter shells1 feathers1 if loon == 1
 . }</code></pre>
+<p><br></p>
 <p>As you can see, there is no special switch command. Instead, we create a local called <code>graphs</code> that is set to either 0 or 1. Next comes an <code>if</code> statement that says if the local is equal to 1, then run the graph. If not, then don’t. It’s good practice to place your switches in the top of your do file so that you don’t have to hunt for them.</p>
 <p>One trick to keep track of <code>if</code> statements (and loops as you will see below) is to indent code that is within the loop and align the start of the loop with the end of the loop. It’s also good practice with long loops to use a comment at the closing brace to label the loop (very helpful when you have many loops in your file).</p>
 <p><br></p>
@@ -650,7 +754,7 @@ S_MODE:         batch</code></pre>
 . }
 
 .   </code></pre>
-<p>If <code>switch == 1</code> then the first command will run; in all other cases, the second command will run.</p>
+<p><br> If <code>switch == 1</code> then the first command will run; in all other cases, the second command will run.</p>
 <p><br></p>
 </div>
 <div id="foreach" class="section level3">
@@ -751,7 +855,7 @@ Mean estimation                   Number of obs   =        435
      +-----+</code></pre>
 <p><br></p>
 <div id="quick-exercise-2" class="section level4">
-<h4>Quick Exercise</h4>
+<h4>QUICK EXERCISE</h4>
 <blockquote>
 <p>Rescale each <code>shells*</code> variable so it is in 1000s of shells.</p>
 </blockquote>
@@ -794,7 +898,7 @@ Mean estimation                   Number of obs   =        435
 10</code></pre>
 <p><br></p>
 <div id="quick-exercise-3" class="section level4">
-<h4>Quick Exercise</h4>
+<h4>QUICK EXERCISE</h4>
 <blockquote>
 <p>Use <code>forvalues</code> to create means for days in nest.</p>
 </blockquote>
@@ -837,57 +941,47 @@ Mean estimation                   Number of obs   =        435
   6.         local type &quot;Loon&quot;
   7.     }
   8.     foreach var of local thoughts {
-  9.         di `i'
- 10.         di &quot;`type'&quot;
- 11.         sum `var' if loon == `i' - 1
- 12.     }
- 13. }
-1
-Not a loon
+  9.         di &quot;`i': `type'&quot;
+ 10.         sum `var' if loon == `i' - 1
+ 11.     }
+ 12. }
+1: Not a loon
 
     Variable |        Obs        Mean    Std. Dev.       Min        Max
 -------------+---------------------------------------------------------
       ideas1 |        157    15.95541    3.386141          7         25
-1
-Not a loon
+1: Not a loon
 
     Variable |        Obs        Mean    Std. Dev.       Min        Max
 -------------+---------------------------------------------------------
       ideas2 |        157    16.04459    3.429405          7         25
-1
-Not a loon
+1: Not a loon
 
     Variable |        Obs        Mean    Std. Dev.       Min        Max
 -------------+---------------------------------------------------------
       ideas3 |        157    15.80255    3.984649          7         26
-2
-Loon
+2: Loon
 
     Variable |        Obs        Mean    Std. Dev.       Min        Max
 -------------+---------------------------------------------------------
       ideas1 |        278    9.010791    3.207036          0         18
-2
-Loon
+2: Loon
 
     Variable |        Obs        Mean    Std. Dev.       Min        Max
 -------------+---------------------------------------------------------
       ideas2 |        278    9.032374    3.399251          0         19
-2
-Loon
+2: Loon
 
     Variable |        Obs        Mean    Std. Dev.       Min        Max
 -------------+---------------------------------------------------------
       ideas3 |        278    8.953237    3.875496         -2         22</code></pre>
 <p><br></p>
 <div id="quick-exercise-4" class="section level4">
-<h4>Quick Exercise</h4>
+<h4>QUICK EXERCISE</h4>
 <blockquote>
-<p>Using the following local set up, create a nested loop that uses either <code>forvalues</code> or a <code>while</code> loop to summarize all the listed variables by period, conditional on the status as a loon.</p>
-<pre><code>local all1 shells1 feathers1 flock1 ideas1 eggs1 nest1
-local all2 shells2 feathers2 flock2 ideas2 eggs2 nest2
-local all3 shells3 feathers3 flock3 ideas3 eggs3 nest3</code></pre>
-<p><br></p>
+<p>Using the nested loop above, store the number of observations, mean, and standard error in a matrix. Hint: initialize a blank matrix before the loop (how big does it need to be?).</p>
 </blockquote>
+<p><br></p>
 </div>
 </div>
 <div id="sectioning-your-do-file-templates" class="section level2">
@@ -904,7 +998,7 @@ local all3 shells3 feathers3 flock3 ideas3 eggs3 nest3</code></pre>
 <li>Recording output</li>
 </ul>
 <p><br> <br></p>
-<p><em>Init: 16 August 2015; Updated: 18 August 2015</em></p>
+<p><em>Init: 16 August 2015; Updated: 30 August 2015</em></p>
 <p><br></p>
 </div>
 
