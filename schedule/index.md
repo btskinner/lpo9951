@@ -107,13 +107,13 @@ ASSIGNMENT 11:  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignmen
 
 ## November 11
 
-**Further Topics in Programming Stata**
+**Reproducible Research I: version control**
 
 LECTURE 12: 
 
 ## November 18
 
-**Graphical Approaches to Describing Data**
+**Reproducible Research II: sharing files**
 
 LECTURE 13: 
 
