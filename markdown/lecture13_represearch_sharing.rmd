@@ -19,7 +19,7 @@ control through git. Git works better with some types of file formats
 than others (e.g., plain text vs. MS Word). Today we will discuss a
 few of these not only in the service of using git, but with the
 purpose of improving how you can collaborate with others and share
-your work.
+your work. We'll also discuss attributions and ownership.
 
 ## The common thread
 
@@ -344,7 +344,7 @@ Most of your plots should be in some vector format.
 * `.ps/.eps`
 * `.svg`
 
-### Attribution
+## Attribution
 
 The internet is still the wild west in terms of
 copyright. At worst unscrupulous people will take credit for your work.
@@ -357,26 +357,80 @@ copyright. At worst unscrupulous people will take credit for your work.
 *(Case in point: it took me a while to figure out who created this comic.)*
 <br>
 
-When you feel ready to share your image with the wider world (which
+When you feel ready to share your work with the wider world (which
 includes posting it on your website), be sure to have your name on
 it. This won't stop someone who really wants to pass off your work as
-his or her own, but it will make sure that someone who simply
-downloads your image or links to it will have cite you, if for no
-other reason than your name is on it.
+his or her own, but it is a first step. Stealing code is much easier to do 
+since a person can just remove your name from the file. With images,
+make sure your name is part of the image itself. This will make sure
+that someone who simply downloads your files or links to it will have
+cite you, if for no other reason than your name is on it.
 
-This goes without saying that you should similarly credit the work of
-others, even if it's just found on the internet.
+All this goes without saying that you should similarly credit the work
+of others, even if it's just found on the internet.
+
+## Ownership
+
+Another aspect of attribution is ownership. When attributing work to
+someone, you make a claim of ownership on his or her behalf. This
+means that you have to understand who owns the work and under what
+conditions. Very rarely will you have a situation in which someone
+writes a bit of code, builds a dataset, or creates a graphic, and then
+formally transfers ownership rights to you to do as you will. There
+will be restrictions concerning when, how, and under what conditions you can
+use the product. Only because of the free-wheeling nature of the
+internet and lax understanding of copyright do people feel as free to
+borrow as they do.
+
+### Licenses
+
+Maybe you've seen software described as *open source* or seen some
+code as falling under the *GNU General Public License v3 (GPL-3)* or
+*MIT
+License*. [While both of the licenses describe works that you are allowed to copy for free (as in beer), they have different rules regarding how free (as in speech) you are to use them.](https://en.wikipedia.org/wiki/Gratis_versus_libre#.22Free_beer.22_vs_.22free_speech.22_distinction)
+Many other licenses exist. Some allow you to incorporate the free code
+into a proprietary program; others say the free code is like
+[ice-nine](https://en.wikipedia.org/wiki/Ice-nine) in that all other
+code it touches will itself fall under the same license (not so good
+if you wanted to sell it).
+
+Be aware of the license that other code/images/data fall under when
+attempting to use. Most snippets and items you find won't come with
+any license. This does not mean you can just take it! The assumption,
+unless told otherwise, is that it belongs to the original owner. Ask
+permission!
+
+As far as your files, decide if and how you want to
+share. [tldrlegal.com](https://tldrlegal.com/) will give you a nice
+summary of various software licenses. GitHub has common license files
+ready to add to your project. You aren't a bad person if you don't
+want to share, but don't expect any party invites from
+[Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman).
+
+But before you run off to share everything...
+
+### Collaboration and sharing
+
+Are you working on someone else's project? Is some organization
+funding this project with grant money? Are you using sensitive or
+restricted data? If the answer to any of these questions is *yes* or
+even, *I think so?*, then don't share unless you have express
+permission to do so. And if given permission, make sure you abide by
+the conditions of that permission.
+
 
 ## Final word
 
-Do you have to use git, LaTeX, markdown, etc. in order to be a good
-researcher? No. If you do, are you thereby a good researcher? Not
-necessarily. The point in introducing you to these various syntaxes and
-techniques is not to say that "this is the **one** way to do research" but
-rather to offer what might be a better way. Pick and choose from these
-techniques and others as you need, but actively choose something. MS
-Word and Dropbox may work fine...for now. Or maybe forever. But don't
-let them be your default simply because you don't know anything else.
+Do you have to use git, LaTeX, markdown, etc. or make all of your work
+free in order to be a good researcher? No. If you do these things, are
+you thereby a good researcher? Not necessarily. The point in
+introducing you to these various syntaxes, techniques, and
+philosophies is not to say that "this is the **one** way to do
+research" but rather to offer what might be a better way. Pick and
+choose from these techniques and others as you need, but actively
+choose something. MS Word and Dropbox may work fine...for now. Or
+maybe forever. But don't let them be your default simply because you
+don't know anything else.
 
 <br><br>
 

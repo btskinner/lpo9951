@@ -108,11 +108,34 @@ using the GUI is fine.
    something on the remote, you can get it back. That's the point of
    version control! Sometimes weird things like merges happen (two
    files with the same name are shoved together). They can be a pain
-   to fix, but they can be fixed.  
+   to fix, but they can be fixed.
+5. Avoid tracking overly large files and pushing them to your remote
+   repository. GitHub has a file size limit of 100 MB per file and 1
+   GB per repo. The history of large files compounds quickly, so think
+   carefully before adding them. Usually this means that small
+   datasets are okay; big ones are better backed up somewhere else and
+   left on your machine.
+6. Remember: even in a private repository, your files are potentially
+   viewable. If any of your datasets or files are restricted, do no
+   push them remotely. Use `.gitignore` to make sure that git doesn't
+   track or push them.
 
 ## Today in class
 
-For class today, I want you to try to accomplish the following tasks:
+For class today, I want you to try to accomplish the following
+tasks.
+
+### Online tutorial
+
+First, complete the [try.github.io](https://try.github.io)
+tutorial. It should take just a few minutes. It will, however, make
+you use the command line method.
+
+### On your own
+
+After completing the tutorial, try to complete the following tasks with your
+own GitHub account. You can use the GitHub GUI this time, or if you're
+feeling bold, the command line/terminal.  
 
 1. Initialize a private repo on GitHub.
 2. Clone that repo to your computer.

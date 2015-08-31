@@ -76,7 +76,10 @@ img {
 <li><a href="#how-does-gitgithub-work">How does git/GitHub work?</a></li>
 </ul></li>
 <li><a href="#some-notes-on-work-flow-good-habits">Some notes on work flow (good habits)</a></li>
-<li><a href="#today-in-class">Today in class</a></li>
+<li><a href="#today-in-class">Today in class</a><ul>
+<li><a href="#online-tutorial">Online tutorial</a></li>
+<li><a href="#on-your-own">On your own</a></li>
+</ul></li>
 </ul>
 </div>
 
@@ -146,11 +149,20 @@ Project = f(size, scope, collaborators)
 <li>Don’t wait to <code>push</code> your commits. Just like you save your papers every few lines or paragraphs, you should push to your remote repo. This way, you’re less likely to lose work in the event of a computer crash. Also, should you want to return to a prior version, small changes make it easier to find what you want.<br /></li>
 <li>Add useful <code>commit</code> messages. The GitHub GUI will make you add something. Don’t say “stuff.” A version history of 95 “stuff”s is pretty non-helpful.<br /></li>
 <li>Don’t freak out! If you accidentally push and overwrite or delete something on the remote, you can get it back. That’s the point of version control! Sometimes weird things like merges happen (two files with the same name are shoved together). They can be a pain to fix, but they can be fixed.</li>
+<li>Avoid tracking overly large files and pushing them to your remote repository. GitHub has a file size limit of 100 MB per file and 1 GB per repo. The history of large files compounds quickly, so think carefully before adding them. Usually this means that small datasets are okay; big ones are better backed up somewhere else and left on your machine.</li>
+<li>Remember: even in a private repository, your files are potentially viewable. If any of your datasets or files are restricted, do no push them remotely. Use <code>.gitignore</code> to make sure that git doesn’t track or push them.</li>
 </ol>
 </div>
 <div id="today-in-class" class="section level2">
 <h2>Today in class</h2>
-<p>For class today, I want you to try to accomplish the following tasks:</p>
+<p>For class today, I want you to try to accomplish the following tasks.</p>
+<div id="online-tutorial" class="section level3">
+<h3>Online tutorial</h3>
+<p>First, complete the <a href="https://try.github.io">try.github.io</a> tutorial. It should take just a few minutes. It will, however, make you use the command line method.</p>
+</div>
+<div id="on-your-own" class="section level3">
+<h3>On your own</h3>
+<p>After completing the tutorial, try to complete the following tasks with your own GitHub account. You can use the GitHub GUI this time, or if you’re feeling bold, the command line/terminal.</p>
 <ol style="list-style-type: decimal">
 <li>Initialize a private repo on GitHub.</li>
 <li>Clone that repo to your computer.</li>
@@ -161,8 +173,9 @@ Project = f(size, scope, collaborators)
 <li>Find my GitHub Gist that gives Stata code to automate the process of converting categorical variables to dummy variables. Fork or clone this gist. The code is now yours to use and/or improve upon!</li>
 </ol>
 <p><br><br></p>
-<p><em>Init: 30 August 2015; Updated: 30 August 2015</em></p>
+<p><em>Init: 30 August 2015; Updated: 31 August 2015</em></p>
 <p><br></p>
+</div>
 </div>
 
 
