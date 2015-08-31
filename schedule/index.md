@@ -43,7 +43,7 @@ LECTURE 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lectur
 
 ASSIGNMENT 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment4.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment4.pdf)]
 
-ADDITIONAL: Summary research area
+ADDITIONAL: Summary research area  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/summary_research_area.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/summary_research_area.pdf)]  
 
 
 ## September 23
@@ -78,7 +78,7 @@ LECTURE 8: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lectur
 
 ASSIGNMENT 8: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment8.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment8.pdf)]  
 
-ADDITIONAL: Research questions
+ADDITIONAL: Research questions [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/research_questions.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/research_questions.pdf)]
 
 ## October 21
 
@@ -104,6 +104,7 @@ LECTURE 11: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lectu
 
 ASSIGNMENT 11:  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment11.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment11.pdf)]  
 
+FINAL ASSIGNMENT: Summary Papers, Do-File, Codebooks  
 
 ## November 11
 
@@ -129,14 +130,11 @@ LECTURE 13: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/617ee5e4860b5ed8a46a
 
 **TBA: based on student work**
 
-LECTURE: *TBA* 
-
-FINAL ASSIGNMENT: Summary Papers, Do-File, Codebooks
+LECTURE 14: *TBA* 
 
 ## December 9
 
 **Class Presentations**
-
 
 
 <br><br>
