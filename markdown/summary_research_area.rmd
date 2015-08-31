@@ -1,0 +1,21 @@
+---
+title: Summary research area
+author: LPO 9951 | Fall 2015
+output: 
+  html_document:
+   theme: cosmo
+   css: ./css/custom.css
+---
+
+Find one article that uses the same dataset that you have
+chosen for your project and review how the authors deal with data
+issues such as weights, missing data, cleaning data, recoding, etc. It
+will be better if this article concerns a research question similar to
+yours, though that is not required.
+
+Submit a 1 to 2 page discussion of what you've found. This is informal,
+but show me that you've engaged with the paper that you've choosen.
+
+This is due before class on October 14. 
+
+<br>

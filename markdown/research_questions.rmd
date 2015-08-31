@@ -1,0 +1,19 @@
+---
+title: Research questions
+author: LPO 9951 | Fall 2015
+output: 
+  html_document:
+   theme: cosmo
+   css: ./css/custom.css
+---
+
+Now that you've had a little more time think about your project as well as some
+more experience with your dataset, please submit a revised research
+question. Use my feedback on your first assignment if you feel
+stuck. If you think you got it right the first time, you can resubmit
+the same question, but please include a paragraph or two offering
+justification.
+
+This is due by class on November 4.
+
+<br>
