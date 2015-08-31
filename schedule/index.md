@@ -104,7 +104,7 @@ LECTURE 11: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lectu
 
 ASSIGNMENT 11:  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment11.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment11.pdf)]  
 
-FINAL ASSIGNMENT: Summary Papers, Do-File, Codebooks  
+FINAL ASSIGNMENT: Summary paper, do file, codebook [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/final_project.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/final_project.pdf)]  
 
 ## November 11
 
