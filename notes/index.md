@@ -46,7 +46,7 @@ in the same directory.
 
 #### FILES
 
-[erasenote.do](https://raw.githubusercontent.com/btskinner/lpo9951/master/notes/quantilenote.do)  
-[erasenote_data.zip](https://raw.githubusercontent.com/btskinner/lpo9951/master/notes/quantilenote.do)
+[erasenote.do](https://raw.githubusercontent.com/btskinner/lpo9951/master/notes/erasenote.do)  
+[erasenote_data.zip](https://raw.githubusercontent.com/btskinner/lpo9951/master/notes/erasenote_data.zip)
 
 
