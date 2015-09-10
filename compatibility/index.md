@@ -15,7 +15,7 @@ comes to the differences between Unix and Windows systems.
 There are some differences that arise from time to time, however, that
 can stall code when moved across platforms. Most often this will occur
 when we use Stata to navigate the underlying file system: `cd`,
-`confirm`, `erase`, etc.  This page will attempt to document th
+`confirm`, `erase`, etc.  This page will attempt to document the
 discrepancies as they arise in class and offer solutions.
 
 *Note to Linux users: As a member of the *nix family, your
@@ -57,7 +57,7 @@ for Windows...
 *except* when that backslash comes before a character, such as a
 backtick `` ` ``, that Stata is accustomed to treating in its own
 special fashion (as the beginning of a local macro, for example), but now
-interprets as normal character escaped with the blackslash.
+interprets as normal character escaped with the backslash.
 
 ### Example
 
