@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Compatability Issues
+title: Compatibility Issues
 date: LPO 9951 | Fall 2015
 author: Benjamin Skinner
 ---
+
+# Compatibility Issues
 
 The content for this course was produced using Apple's OS X. For most of what
 we do, your choice of computer system is irrelevant. Stata is
