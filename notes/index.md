@@ -14,8 +14,8 @@ need some time to formulate a useful answer. Hopefully the notes
 below will clarify some issues that have arisen in class this
 semester.
 
-* [Binning a continuous variable](#Binning a continuous variable)
-* [Using `erase` to remove files](#Using `erase` to remove files)  
+* [Binning a continuous variable](#Binning-a-continuous-variable)
+* [Using `erase` to remove files](#Using-`erase`-to-remove-files)  
 
 ## Binning a continuous variable
 
