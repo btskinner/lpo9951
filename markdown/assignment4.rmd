@@ -24,9 +24,9 @@ so that the two files do not match.
 5. Repeat the `merge` command again, but this time create a result
    where the two additional (fake) observations are dropped. Do this
    using the `merge` command itself, not `drop if` or `keep if`.
-6. Repeat the merge, but this time only keep the variables in the
+6. Repeat the merge, but this time only keep the observations in the
 *master* dataset.
-7. Repeat the merge, but this time only keep the variables in the
+7. Repeat the merge, but this time only keep the observations in the
 *using* dataset.
 
 Submit your results in a do file per normal procedure. Remember that
