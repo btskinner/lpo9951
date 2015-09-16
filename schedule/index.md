@@ -41,7 +41,7 @@ ASSIGNMENT 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 LECTURE 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/3a47c7e770b9a15ce289d354de74daaf33bc7444/lecture/lecture4_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture4_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture4_dataset_manipulation.do)]   
 
-ASSIGNMENT 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment4.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment4.pdf)]
+ASSIGNMENT 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/4826570cf40ae5b7c69095fe2aa2f74c72d34acf/assignments/assignment4.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment4.pdf)]
 
 ADDITIONAL: Summary research area  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/summary_research_area.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/summary_research_area.pdf)]  
 
