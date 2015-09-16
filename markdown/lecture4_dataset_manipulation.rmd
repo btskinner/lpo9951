@@ -35,6 +35,17 @@ data, doing a simple one-to-one merge, and collapsing data.
 
 <br>
 
+## Read in data
+
+For today's lecture, we'll use the `apipop` dataset, which is
+available online.
+
+```{r}
+start <- 'set globals for url data link and local data path'
+end <- 'split into three datasets: elementary, middle, and high school'
+writeLines(logparse(lf, start = start, end = end))
+```
+
 ## Subsetting with `preserve` and `restore`
 
 A feature and sometimes curse of Stata is that it can only hold one
@@ -46,7 +57,7 @@ curse when you have multiple datasets that you would like to work with
 simultaneously or, as we will do below, split a single dataset into
 smaller parts.
 
-To repeated subset a large dataset, there are two primary choices:  
+To repeatedly subset a large dataset, there are two primary choices:  
   1. Reload the full dataset into memory after each subset and save  
   2. Use the `preserve` and `restore` commands
 
@@ -115,6 +126,7 @@ start <- 'merging via the merge command'
 end <- 'show merge stats for each merge'
 writeLines(logparse(lf, start = start, end = end))
 ```
+<br>
 
 Once you've completed the merge, you can take a look at the \_merge_*
 variables that were generated to see where the data came from.
@@ -126,7 +138,7 @@ writeLines(logparse(lf, start = start, end = end))
 ```
 <br>
 
-#### Quick Exercise
+#### QUICK EXERCISE
 > Create a dataset that has just middle and elementary schools. Do
 > this using first the `append` command and then the `merge` command.
 
@@ -161,7 +173,7 @@ writeLines(logparse(lf, start = start, end = end))
 
 <br>
 
-#### Quick Exercise
+#### QUICK EXERCISE
 > Create a dataset that has only mobility and percent tested. Next
 > create another dataset that has only the year round and percent
 > responding variables. Now merge these two datasets together using a
@@ -189,7 +201,7 @@ writeLines(logparse(lf, start = start, end = end))
 
 <br>
 
-#### Quick Exercise
+#### QUICK EXERCISE
 > Create a district level dataset that contains district level
 > averages for the following variables:  
 >   1. apioo  

@@ -68,6 +68,7 @@ img {
 
 <div id="TOC">
 <ul>
+<li><a href="#read-in-data">Read in data</a></li>
 <li><a href="#subsetting-with-preserve-and-restore">Subsetting with <code>preserve</code> and <code>restore</code></a></li>
 <li><a href="#appending-data">Appending Data</a></li>
 <li><a href="#merging-data">Merging Data</a></li>
@@ -82,10 +83,20 @@ img {
 <p>Learning to manipulate datasets is a key skill for statistical analysis. Today we’ll work on four skills: subsetting data using preserve and restore commands, appending data, doing a simple one-to-one merge, and collapsing data.</p>
 <p><br></p>
 </div>
+<div id="read-in-data" class="section level2">
+<h2>Read in data</h2>
+<p>For today’s lecture, we’ll use the <code>apipop</code> dataset, which is available online.</p>
+<pre><code>. global urldata &quot;http://www.ats.ucla.edu/stat/stata/library/apipop&quot;
+
+. global datadir &quot;../data/&quot;
+
+. // read web data into memory
+. use $urldata, clear</code></pre>
+</div>
 <div id="subsetting-with-preserve-and-restore" class="section level2">
 <h2>Subsetting with <code>preserve</code> and <code>restore</code></h2>
 <p>A feature and sometimes curse of Stata is that it can only hold one dataset in active memory at a time. As a feature, it helps you keep your work organized and, through numerous warning messages, tries to make sure you don’t lose your work by accidentally forgetting to save or mindlessly overwritting your data. The feature feels more like a curse when you have multiple datasets that you would like to work with simultaneously or, as we will do below, split a single dataset into smaller parts.</p>
-<p>To repeated subset a large dataset, there are two primary choices:<br /> 1. Reload the full dataset into memory after each subset and save<br /> 2. Use the <code>preserve</code> and <code>restore</code> commands</p>
+<p>To repeatedly subset a large dataset, there are two primary choices:<br /> 1. Reload the full dataset into memory after each subset and save<br /> 2. Use the <code>preserve</code> and <code>restore</code> commands</p>
 <p>In the code below, notice how the <code>preserve</code> and <code>restore</code> commands bookend the <code>keep</code> command, which keeps only those observations that fulfill the <code>if</code> statement (in this case, the type of school). The steps are:<br /> 1. preserve dataset in memory<br /> 2. subset to keep only school type that we want<br /> 3. save new subset dataset<br /> 4. restore old dataset</p>
 <pre><code>. // elementary schools
 . preserve
@@ -177,6 +188,7 @@ file ../data/middle.dta saved</code></pre>
 
     matched                                 0  (_merge_b==3)
     -----------------------------------------</code></pre>
+<p><br></p>
 <p>Once you’ve completed the merge, you can take a look at the _merge_* variables that were generated to see where the data came from.</p>
 <pre><code>. tab _merge_a
 
@@ -197,7 +209,7 @@ file ../data/middle.dta saved</code></pre>
                   Total |      6,194      100.00</code></pre>
 <p><br></p>
 <div id="quick-exercise" class="section level4">
-<h4>Quick Exercise</h4>
+<h4>QUICK EXERCISE</h4>
 <blockquote>
 <p>Create a dataset that has just middle and elementary schools. Do this using first the <code>append</code> command and then the <code>merge</code> command.</p>
 </blockquote>
@@ -242,7 +254,7 @@ file ../data/api_2.dta saved</code></pre>
                   Total |      6,194      100.00</code></pre>
 <p><br></p>
 <div id="quick-exercise-1" class="section level4">
-<h4>Quick Exercise</h4>
+<h4>QUICK EXERCISE</h4>
 <blockquote>
 <p>Create a dataset that has only mobility and percent tested. Next create another dataset that has only the year round and percent responding variables. Now merge these two datasets together using a one-to-one merge.</p>
 </blockquote>
@@ -269,12 +281,12 @@ Number of records is  6194
 <p><em>NB:</em> Notice the check using the <code>unique</code> command. If the number didn’t align or gave some unexpected value, we should recheck our data and code.</p>
 <p><br></p>
 <div id="quick-exercise-2" class="section level4">
-<h4>Quick Exercise</h4>
+<h4>QUICK EXERCISE</h4>
 <blockquote>
 <p>Create a district level dataset that contains district level averages for the following variables:<br /> 1. apioo<br /> 2. api99<br /> 3. ell<br /> 4. meals<br />Do the same thing using just district <em>medians</em>.</p>
 </blockquote>
 <p><br> <br></p>
-<p><em>Init: 15 August 2015; Updated: 15 August 2015</em></p>
+<p><em>Init: 15 August 2015; Updated: 15 September 2015</em></p>
 <p><br></p>
 </div>
 </div>
