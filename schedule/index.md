@@ -39,7 +39,7 @@ ASSIGNMENT 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments
 
 **Dataset Manipulation: Subsetting, appending, collapsing, and merging**
 
-LECTURE 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/10332a32628d243575bd9bc7d4fa1f4850483ded/lecture/lecture4_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture4_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture4_dataset_manipulation.do)]   
+LECTURE 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/3a47c7e770b9a15ce289d354de74daaf33bc7444/lecture/lecture4_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture4_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture4_dataset_manipulation.do)]   
 
 ASSIGNMENT 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment4.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment4.pdf)]
 
