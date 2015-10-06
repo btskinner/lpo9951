@@ -75,7 +75,7 @@ egen scoretot = total(score)            // total of all scores
 scalar xbar = scoretot / n              // sample mean score
 gen sqdiff = (score - xbar)^2           // (Xi - Xbar)^2
 egen sst = total(sqdiff)                // total of squared differences
-scalar var_x = sst / n                  // sample variance
+scalar var_x = sst / (n - 1)            // sample variance
 scalar sd_x = sqrt(var_x)               // sample standard deviation
 scalar sampsem = sd_x / sqrt(n)         // standard error of sample mean
 

@@ -250,7 +250,7 @@ Mean estimation                   Number of obs   =    150,000
 
 . egen sst = total(sqdiff)                // total of squared differences
 
-. scalar var_x = sst / n                  // sample variance
+. scalar var_x = sst / (n - 1)            // sample variance
 
 . scalar sd_x = sqrt(var_x)               // sample standard deviation
 
@@ -258,9 +258,9 @@ Mean estimation                   Number of obs   =    150,000
 
 . scalar list xbar var_x sd_x sampsem
       xbar =  78.874406
-     var_x =  26.844847
-      sd_x =  5.1812013
-   sampsem =   .9459536
+     var_x =  27.770531
+      sd_x =  5.2697752
+   sampsem =  .96212492
 
 . // calculate fpc
 . scalar fpc = sqrt((N - n) / (N - 1))
@@ -269,22 +269,22 @@ Mean estimation                   Number of obs   =    150,000
 . scalar sampsemfpc = sampsem * fpc
 
 . scalar list sampsem sampsemfpc
-   sampsem =   .9459536
-sampsemfpc =  .60434759
+   sampsem =  .96212492
+sampsemfpc =  .61467907
 
 . // 95% CI for the mean
 . di xbar - invnormal(.975) * sampsem
-77.020371
+76.988676
 
 . di xbar + invnormal(.975) * sampsem
-80.728441
+80.760136
 
 . // 95% CI for fpc-adjusted mean
 . di xbar - invnormal(.975) * sampsemfpc
-77.689906
+77.669657
 
 . di xbar + invnormal(.975) * sampsemfpc
-80.058905</code></pre>
+80.079155</code></pre>
 <p>Comparing the 95% confidence intervals, we can see they are a little tighter when the FPC is used. This is a reflection of our knowledge that our sample respresents a sizeable portion of the population and therefore is a better estimate than the standard formula will compute.</p>
 <p><br></p>
 </div>
@@ -701,7 +701,7 @@ Mean estimation                   Number of obs   =        872
 . tempfile stratmeans                          // init temporary file
 
 . save `stratmeans'                            // save temporary file
-file /var/folders/p7/5ylvzpld32x89bnkw42jj7dw0000gr/T//St10270.000004 saved
+file /var/folders/p7/5ylvzpld32x89bnkw42jj7dw0000gr/T//St08180.000004 saved
 
 . restore
 
@@ -733,7 +733,7 @@ Ybar_school_sem =  .33002674</code></pre>
 <h2>Good news</h2>
 <p>Now that we’ve gone through this process, the good news is that with most national educational surveys, you won’t have to compute weights or figure out means and variances by hand. Instead, the data files will give you the weights you need. Stata also has prepackaged routines to help you in this process. The most important one is <code>svyset</code> and its suite of commands. We will discuss these in the next lecture.</p>
 <p><br> <br></p>
-<p><em>Init: 23 August 2015; Updated: 24 August 2015</em></p>
+<p><em>Init: 23 August 2015; Updated: 06 October 2015</em></p>
 <p><br></p>
 </div>
 
