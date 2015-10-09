@@ -49,4 +49,14 @@ in the same directory.
 [erasenote.do](https://raw.githubusercontent.com/btskinner/lpo9951/master/notes/erasenote.do)  
 [erasenote_data.zip](https://raw.githubusercontent.com/btskinner/lpo9951/master/notes/erasenote_data.zip)
 
+## Variance estimates of inverse weighted means
 
+In the first lesson on sampling design, we discussed the use of inverse probability weights to compute a more accurate estimate of a population mean. We noted that in the class example, the estimate of the standard error of the mean increased. Is this always the case?
+
+
+#### FILES
+
+[weightsnote.do](https://raw.githubusercontent.com/btskinner/lpo9951/master/notes/weightsnote.do)  
+
+
+ 
