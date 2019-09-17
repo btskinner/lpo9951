@@ -15,7 +15,7 @@ The schedule for all class meetings is as follows. Assignments are given in the 
 
 LECTURE 1: [[Web](../lecture/lecture1_introduction.html)] [[PDF](../lecture/lecture1_introduction.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture1_introduction.do)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture1_introduction_hello.do)] 
 
-ASSIGNMENT 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment1.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment1.pdf)]  
+ASSIGNMENT 1: [[Web](../assignments/assignment1.html)] [[PDF](../assignments/assignment1.pdf)]  
 
 
 ## September 2
