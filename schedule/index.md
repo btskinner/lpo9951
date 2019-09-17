@@ -22,89 +22,89 @@ ASSIGNMENT 1: [[Web](../assignments/assignment1.html)] [[PDF](../assignments/ass
 
 **Stata Basics**
 
-LECTURE 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture2_stata_basics.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture2_stata_basics.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture2_stata_basics.do)]     
+LECTURE 2: [[Web](../lecture/lecture2_stata_basics.html)] [[PDF](../lecture/lecture2_stata_basics.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture2_stata_basics.do)]     
 
-ASSIGNMENT 2: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment2.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment2.pdf)]  
+ASSIGNMENT 2: [[Web](../assignments/assignment2.html)] [[PDF](../assignments/assignment2.pdf)]  
 
 
 ## September 9
 
 **Working with NCES Datasets**
 
-LECTURE 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/5cfc341f1ec7af1ca673277025afa9622bd25e80/lecture/lecture3_nces_datasets.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture3_nces_datasets.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture3_nces_datasets.do)]    
+LECTURE 3: [[Web](../lecture/lecture3_nces_datasets.html)]  [[PDF](../lecture/lecture3_nces_datasets.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture3_nces_datasets.do)]    
 
-ASSIGNMENT 3: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment3.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment3.pdf)]
+ASSIGNMENT 3: [[Web](../assignments/assignment3.html)] [[PDF](../assignments/assignment3.pdf)]
 
 ## September 16
 
 **Dataset Manipulation: Subsetting, appending, collapsing, and merging**
 
-LECTURE 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/3a47c7e770b9a15ce289d354de74daaf33bc7444/lecture/lecture4_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture4_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture4_dataset_manipulation.do)]   
+LECTURE 4: [[Web](../lecture/lecture4_dataset_manipulation.html)]  [[PDF](../lecture/lecture4_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture4_dataset_manipulation.do)]   
 
-ASSIGNMENT 4: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/4826570cf40ae5b7c69095fe2aa2f74c72d34acf/assignments/assignment4.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment4.pdf)]
+ASSIGNMENT 4: [[Web](../assignments/assignment4.html)] [[PDF](../assignments/assignment4.pdf)]
 
-ADDITIONAL: Summary research area  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/summary_research_area.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/summary_research_area.pdf)]  
+ADDITIONAL: Summary research area  [[Web](../assignments/summary_research_area.html)] [[PDF](../assignments/summary_research_area.pdf)]  
 
 
 ## September 23
 
 **More Dataset Manipulation: One to many merging and many to one merging**
 
-LECTURE 5: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture5_more_dataset_manipulation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture5_more_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture5_more_dataset_manipulation.do)]   
+LECTURE 5: [[Web](../lecture/lecture5_more_dataset_manipulation.html)]  [[PDF](../lecture/lecture5_more_dataset_manipulation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture5_more_dataset_manipulation.do)]   
 
-ASSIGNMENT 5: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment5.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment5.pdf)]  
+ASSIGNMENT 5: [[Web](../assignments/assignment5.html)] [[PDF](../assignments/assignment5.pdf)]  
 
 ## September 30
 
 **Introduction to Programming and Helpful Functions**
 
-LECTURE 6: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/a91d18ea927a7c7b66509dcc9672112d14a75f8a/lecture/lecture6_programming.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture6_programming.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture6_programming.do)]   
+LECTURE 6: [[Web](../lecture/lecture6_programming.html)]  [[PDF](../lecture/lecture6_programming.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture6_programming.do)]   
 
-ASSIGNMENT 6: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment6.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment6.pdf)]  
+ASSIGNMENT 6: [[Web](../assignments/assignment6.html)] [[PDF](../assignments/assignment6.pdf)]  
 
 ## October 7
 
 **Sampling: Part I**
 
-LECTURE 7: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/96929a0edfc9f78264f34fa7dca90f941cbaae8a/lecture/lecture7_sampling_part1.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture7_sampling_part1.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture7_sampling_part1.do)]   
+LECTURE 7: [[Web](../lecture/lecture7_sampling_part1.html)]  [[PDF](../lecture/lecture7_sampling_part1.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture7_sampling_part1.do)]   
 
-ASSIGNMENT 7: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment7.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment7.pdf)]  
+ASSIGNMENT 7: [[Web](../assignments/assignment7.html)] [[PDF](../assignments/assignment7.pdf)]  
 
 ## October 14
 
 **Sampling: Part II**
 
-LECTURE 8: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture8_sampling_part2.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture8_sampling_part2.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture8_sampling_part2.do)]   
+LECTURE 8: [[Web](../lecture/lecture8_sampling_part2.html)]  [[PDF](../lecture/lecture8_sampling_part2.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture8_sampling_part2.do)]   
 
-ASSIGNMENT 8: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment8.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment8.pdf)]  
+ASSIGNMENT 8: [[Web](../assignments/assignment8.html)] [[PDF](../assignments/assignment8.pdf)]  
 
-ADDITIONAL: Research questions [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/research_questions.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/research_questions.pdf)]
+ADDITIONAL: Research questions [[Web](../assignments/research_questions.html)] [[PDF](../assignments/research_questions.pdf)]
 
 ## October 21
 
 **Data Cleaning**
 
-LECTURE 9: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture9_cleaning.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture9_cleaning.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture9_cleaning.do)]   
+LECTURE 9: [[Web](../lecture/lecture9_cleaning.html)]  [[PDF](../lecture/lecture9_cleaning.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture9_cleaning.do)]   
 
-ASSIGNMENT 9: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment9.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment9.pdf)]  
+ASSIGNMENT 9: [[Web](../assignments/assignment9.html)] [[PDF](../assignments/assignment9.pdf)]  
 
 ## October 28
 
 **Data Validation**
 
-LECTURE 10: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture10_validation.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture10_validation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture10_validation.do)]   
+LECTURE 10: [[Web](../lecture/lecture10_validation.html)]  [[PDF](../lecture/lecture10_validation.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture10_validation.do)]   
 
-ASSIGNMENT 10: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment10.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment10.pdf)]  
+ASSIGNMENT 10: [[Web](../assignments/assignment10.html)] [[PDF](../assignments/assignment10.pdf)]  
 
 ## November 4
 
 **Descriptive Statistics: tabular and graphical approaches**
 
-LECTURE 11: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/lecture/lecture11_descriptives.html)]  [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture11_descriptives.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture11_descriptives.do)]   
+LECTURE 11: [[Web](../lecture/lecture11_descriptives.html)]  [[PDF](../lecture/lecture11_descriptives.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture11_descriptives.do)]   
 
-ASSIGNMENT 11:  [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment11.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment11.pdf)]  
+ASSIGNMENT 11:  [[Web](../assignments/assignment11.html)] [[PDF](../assignments/assignment11.pdf)]  
 
-FINAL ASSIGNMENT: Summary paper, do file, codebook [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/final_project.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/final_project.pdf)]  
+FINAL ASSIGNMENT: Summary paper, do file, codebook [[Web](../assignments/final_project.html)] [[PDF](../assignments/final_project.pdf)]  
 
 ## November 11
 
@@ -112,13 +112,13 @@ FINAL ASSIGNMENT: Summary paper, do file, codebook [[Web](https://cdn.rawgit.com
 
 BEFORE CLASS READING: [[Web](http://scfbm.biomedcentral.com/articles/10.1186/1751-0473-8-7)]  
 
-LECTURE 12: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/617ee5e4860b5ed8a46a98f6c0969ba069c96765/lecture/lecture12_represearch_vc.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture12_represearch_vc.pdf)]
+LECTURE 12: [[Web](../lecture/lecture12_represearch_vc.html)] [[PDF](../lecture/lecture12_represearch_vc.pdf)]
 
 ## November 18
 
 **Reproducible Research II: sharing files**
 
-LECTURE 13: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/617ee5e4860b5ed8a46a98f6c0969ba069c96765/lecture/lecture13_represearch_sharing.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture13_represearch_sharing.pdf)]
+LECTURE 13: [[Web](../lecture/lecture13_represearch_sharing.html)] [[PDF](../lecture/lecture13_represearch_sharing.pdf)]
 
 
 ## November 25
