@@ -1,11 +1,13 @@
 ---
 title: 'Reproducible Research II: sharing files'
-author: LPO 9951 | Fall 2015
-output: 
+author: "LPO 9951 | Fall 2015"
+output:
+  pdf_document:
+    toc: yes
   html_document:
-   toc: true
-   theme: cosmo
-   css: ./css/custom.css
+    css: ./css/custom.css
+    theme: cosmo
+    toc: yes
 ---
 
 ```{r, echo = FALSE, message = FALSE}
@@ -85,10 +87,10 @@ you can pick anything you want and still be a "real" programmer.
 
 <br>
 <p align = "center">
-![](http://imgs.xkcd.com/comics/real_programmers.png)
+[![](http://imgs.xkcd.com/comics/real_programmers.png)](https://xkcd.com/378/)
 </p>
 *[Real programmers set the universal constants at the start such that
-the universe evolves to contain the disk with the data they want.]*  
+the universe evolves to contain the disk with the data they want.]*
 *Credit: xkcd*
 <br>
 <br>
@@ -403,9 +405,7 @@ permission!
 As far as your files, decide if and how you want to
 share. [tldrlegal.com](https://tldrlegal.com/) will give you a nice
 summary of various software licenses. GitHub has common license files
-ready to add to your project. You aren't a bad person if you don't
-want to share, but don't expect any party invites from
-[Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman).
+ready to add to your project. 
 
 But before you run off to share everything...
 

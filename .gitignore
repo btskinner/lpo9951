@@ -36,3 +36,6 @@
 
 # schedule
 /schedule
+
+# MacOS
+.DS_Store
