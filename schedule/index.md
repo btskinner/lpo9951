@@ -13,7 +13,10 @@ The schedule for all class meetings is as follows. Assignments are given in the 
 
 **Class Introduction**  
 
-LECTURE 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/5cfc341f1ec7af1ca673277025afa9622bd25e80/lecture/lecture1_introduction.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture1_introduction.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture1_introduction.do)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture1_introduction_hello.do)]     
+<!-- LECTURE 1: -->
+<!-- [[Web](https://cdn.rawgit.com/btskinner/lpo9951/5cfc341f1ec7af1ca673277025afa9622bd25e80/lecture/lecture1_introduction.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/lecture/lecture1_introduction.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture1_introduction.do)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture1_introduction_hello.do)] --> 
+
+LECTURE 1: [[Web](../lecture/lecture1_introduction.html)] [[PDF](../lecture/lecture1_introduction.pdf)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture1_introduction.do)] [[Do](https://github.com/btskinner/lpo9951/raw/master/do/lecture1_introduction_hello.do)] 
 
 ASSIGNMENT 1: [[Web](https://cdn.rawgit.com/btskinner/lpo9951/master/assignments/assignment1.html)] [[PDF](https://github.com/btskinner/lpo9951/raw/master/assignments/assignment1.pdf)]  
 

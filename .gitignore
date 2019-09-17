@@ -6,3 +6,4 @@ plots/
 students/
 
 !/data/index.md
+.DS_Store
